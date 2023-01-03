@@ -1,0 +1,5 @@
+rm(list=ls())
+df <- data.frame(weight=c(50, 55, 30, 44), age = c(20, 30, 25,40), sex = c(rep("male", 2), rep("female", 2)))
+head(df)
+fit <- lm(weight ~ age + sex, data = df)
+summary(fit)
