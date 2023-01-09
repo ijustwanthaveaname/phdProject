@@ -1,10 +1,20 @@
 setwd("~/Project/survival-analysis")
 library(survival)
 library(survminer)
-head(lung)
+library(eha)
+# run PH model using eha package
+head(oldmort)
+# enter: start time, exit: end time, event: true means death, false means others
+fit.g <- phreg(Surv(enter - 60, exit - 60, event) ~ sex + civ + region, 
+             dist = "gompertz", data = oldmort)
+summary(fit.g)
+# run cox model using eha package
+fit.c <- coxreg(Surv(enter - 60, exit - 60, event) ~ sex + civ + region, data = oldmort)
+summary(fit.c)
 # fit the km model for the data
 # set ~1 because no x variables
 # default type is km
+head(lung)
 km.model <- survfit(Surv(time, status) ~ 1, type = "kaplan-meier", data = lung)
 summary(km.model)
 # include 1 categorical variable with in KM model
