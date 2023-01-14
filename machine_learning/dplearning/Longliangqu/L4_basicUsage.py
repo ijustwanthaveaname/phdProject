@@ -93,3 +93,21 @@ b.shape
 
 b = tf.tile(tf.random.normal([1, 32, 1]), [4, 1, 32])
 b.shape
+
+
+a = tf.ones([4, 2, 3])
+b = tf.fill([4, 3, 5], 2.)
+a@b
+tf.matmul(a ,b)
+
+b = tf.ones([3 ,5])
+bb = tf.broadcast_to(b, [4, 3, 5])
+a@bb
+
+
+# y = X@W + b
+x = tf.ones([4, 2])
+W = tf.ones([2, 1])
+b = tf.constant(0.1)
+out = x@W + b
+tf.nn.relu(out)
