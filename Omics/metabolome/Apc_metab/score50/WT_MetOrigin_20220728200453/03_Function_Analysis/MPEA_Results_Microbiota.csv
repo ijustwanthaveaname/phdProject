@@ -1,0 +1,4 @@
+"No.","ID","Name","Match status","Pvalue","Metabolite ID","Metabolites","Sig. Metabolite ID","Sig. Metabolites"
+1,"ko00623","Toluene degradation","2 in 37","3.98e-04","C00633; C00261","4-Hydroxybenzaldehyde; Benzaldehyde","C00633; C00261","4-Hydroxybenzaldehyde; Benzaldehyde"
+2,"ko00627","Aminobenzoate degradation","2 in 62","1.12e-03","C00633; C00261","4-Hydroxybenzaldehyde; Benzaldehyde","C00633; C00261","4-Hydroxybenzaldehyde; Benzaldehyde"
+3,"ko00460","Cyanoamino acid metabolism","1 in 26","2.45e-02","C06114","Gamma-Glutamyl-beta-aminopropiononitrile","C06114","Gamma-Glutamyl-beta-aminopropiononitrile"

@@ -1,0 +1,204 @@
+"HMDBID","KEGGID","Name","Diff","Origin","Link"
+"HMDB0030046","C08886","AsparagosideA",1,"Food related","HMDB: HMDB0030046"
+"HMDB0011486","-","LysoPE(0:0/20:3(8Z,11Z,14Z))",1,"Food related","HMDB: HMDB0011486"
+"HMDB0002815","-","LysoPC(18:1(9Z))",1,"Food related","HMDB: HMDB0002815"
+"HMDB0010382","C04230","LysoPC(16:0)",1,"Co-Metabolism","KEGG: C04230"
+NA,"-","Chenodeoxycholicacid3-sulfate",1,"Unknown",NA
+"HMDB0010386","-","LysoPC(18:2(9Z,12Z))",1,"Food related","HMDB: HMDB0010386"
+"HMDB0033199","-","(4beta,5beta,6beta,14beta,15alpha,20S,22R)-5,6-Epoxy-4,14,15-trihydroxy-1-oxowitha-2,24-dienolide",1,"Food related","HMDB: HMDB0033199"
+"HMDB0002409","-","N-[(3a,5b,7b)-7-hydroxy-24-oxo-3-(sulfooxy)cholan-24-yl-Glycine",1,"Microbiota","HMDB: HMDB0002409"
+"HMDB0011195","-","2-Hydroxy-3-methoxyestrone",1,"Food related","HMDB: HMDB0011195"
+NA,"C03033","Aldosterone18-glucuronide",1,"Co-Metabolism","KEGG: C03033"
+NA,"-","12-oxo-20-dihydroxy-leukotrieneB4",1,"Unknown",NA
+NA,"-","(1R,16Z,24E,26E,28Z)-1,13,18-trihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0,hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone",1,"Unknown",NA
+"HMDB0028867","-","Hydroxyprolyl-Leucine",1,"Unknown",NA
+NA,"-","(1R,12S,16Z,24E,26E,28Z,32S)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0,hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone",1,"Unknown",NA
+NA,"C03033","Dehydroisoandrosterone3-glucuronide",1,"Co-Metabolism","KEGG: C03033"
+"HMDB0041085","-","Sambutoxin",1,"Food related","HMDB: HMDB0041085"
+"HMDB0035167","-","CinncassiolC119-glucoside",1,"Food related","HMDB: HMDB0035167"
+"HMDB0000328","-","12-Ketodeoxycholicacid",1,"Food related","HMDB: HMDB0000328"
+NA,"-","[(16R)-5,7-dihydroxy-8,8,10,16-tetramethyl-3-[1-(2-methyl-1,3-thiazol-4-yl)prop-1-en-2-yl-12-methylidene-9-oxo-17-oxa-4-azabicyclo[14.1.0heptadec-4-en-11-yloxidanesulfonicacid",1,"Unknown",NA
+"HMDB0061127","-","4R-Hydroxysolifenacin",1,"Drug related","HMDB: HMDB0061127"
+"HMDB0035200","-","YucalexinB5",1,"Food related","HMDB: HMDB0035200"
+"HMDB0010382","C04230","PC(16:0/0:0)",1,"Co-Metabolism","KEGG: C04230"
+"HMDB0000788","C01103","Orotidine",1,"Co-Metabolism","KEGG: C01103"
+NA,"-","(7R*,8R*)-3-Methoxy-3,4,7,9,9-pentahydroxy-8,4-oxyneolignan4-xyloside",1,"Unknown",NA
+"HMDB0006285","C16678","4-oxo-Retinoicacid",1,"Drug related","HMDB: HMDB0006285"
+"HMDB0000953","-","Suberylglycine",1,"Unknown",NA
+"HMDB0002639","C11301","Sulfolithocholylglycine",1,"Microbiota","HMDB: HMDB0002639"
+"HMDB0030155","-","AustalideI",1,"Food related","HMDB: HMDB0030155"
+"HMDB0010383","C04230","LysoPC(16:1(9Z))",1,"Co-Metabolism","KEGG: C04230"
+NA,"-","PC(18:1(9Z)/0:0)[U",1,"Unknown",NA
+NA,"-","Sorbitanstearate",1,"Unknown",NA
+NA,"-","6-hydroxy-6-(hydroxymethyl)-1,1,4a-trimethyl-5-{[(2-oxo-2H-chromen-7-yl)oxymethyl}-decahydronaphthalen-2-ylacetate",1,"Unknown",NA
+"HMDB0010386","C04100","1-Linoleoylglycerophosphocholine",1,"Food related","HMDB: HMDB0010386"
+"HMDB0032105","-","1,2-Anhydridoniveusin",1,"Food related","HMDB: HMDB0032105"
+"HMDB0010393","-","LysoPC(20:3(5Z,8Z,11Z))",1,"Food related","HMDB: HMDB0010393"
+"HMDB0031511","-","Diacetonealcohol",1,"Food related","HMDB: HMDB0031511"
+NA,"-","PE(18:1(9Z)/0:0)",1,"Unknown",NA
+"HMDB0000222","C02990","Palmitoyl-L-carnitine",1,"Co-Metabolism","KEGG: C02990"
+NA,"-","6-(3-{8-[5,7-dihydroxy-2-(4-hydroxyphenyl)-4-oxo-3,4-dihydro-2H-1-benzopyran-3-yl-5,7-dihydroxy-4-oxo-3,4-dihydro-2H-1-benzopyran-2-yl}phenoxy)-3,4,5-trihydroxyoxane-2-carboxylicacid",1,"Unknown",NA
+"HMDB0061641","-","3-hydroxypentadecanoylcarnitine",1,"Food related","HMDB: HMDB0061641"
+"HMDB0011503","-","PE(16:0/0:0)",1,"Food related","HMDB: HMDB0011503"
+"HMDB0029353","-","Galactosyl4-hydroxyproline",1,"Food related","HMDB: HMDB0029353"
+NA,"-","19(R)-hydroxy-PGA2",1,"Unknown",NA
+NA,"-","PheTrp",1,"Unknown",NA
+"HMDB0000476","-","3-Oxo-4,6-choladienoicacid",1,"Food related","HMDB: HMDB0000476"
+NA,"C08690","Icacine",1,"Unknown",""
+"HMDB0010384","C04230","1-Stearoylglycerophosphocholine",1,"Co-Metabolism","KEGG: C04230"
+"HMDB0035607","-","SaponinH",1,"Food related","HMDB: HMDB0035607"
+"HMDB0030580","-","(R)-Shinanolone",1,"Food related","HMDB: HMDB0030580"
+NA,"C19976","Valinopine",1,"Unknown",""
+NA,"-","3b,16a-Dihydroxyandrostenonesulfate",1,"Unknown",NA
+"HMDB0037719","-","2-Phenylethyloctanoate",1,"Food related","HMDB: HMDB0037719"
+"HMDB0001119","C19579","4-Hydroxy-4-(3-pyridyl)-butanoicacid",1,"Unknown",""
+"HMDB0031864","C10454","Methyleugenol",1,"Food related","HMDB: HMDB0031864"
+NA,"-","6E,8E,12E,14E-Hexadecatetraen-10-ynoicacid",1,"Unknown",NA
+"HMDB0036470","C09633","Chamazulene",1,"Drug related","DrugBank: DB15931"
+"HMDB0036466","-","Zerumboneoxide",1,"Food related","HMDB: HMDB0036466"
+"HMDB0000215","C00140","N-Acetyl-D-glucosamine",1,"Co-Metabolism","KEGG: C00140"
+NA,"-","4-[5-ladderane-butanoicacid",1,"Unknown",NA
+"HMDB0001406","C00153","Niacinamide",1,"Co-Metabolism","KEGG: C00153"
+"HMDB0059764","C14330","2,6-Dimethylnaphthalene",1,"Unknown",""
+NA,"-","Taurocholicacid3-sulfate",1,"Unknown",NA
+"HMDB0059698","-","Cadalene",1,"Food related","HMDB: HMDB0059698"
+"HMDB0034099","-","(2E,4E)-2,7-Dimethyl-2,4-octadienedioicacid",1,"Food related","HMDB: HMDB0034099"
+"HMDB0000210","C00864","PantothenicAcid",1,"Co-Metabolism","KEGG: C00864"
+"HMDB0000792","C08277","Sebacicacid",1,"Drug related","DrugBank: DB07645"
+NA,"-","Farnesylacetone",1,"Unknown",NA
+"HMDB0000447","C15568","7a,12a-Dihydroxy-3-oxo-4-cholenoicacid",1,"Food related","HMDB: HMDB0000447"
+"HMDB0004362","-","4-hydroxyNonenal",1,"Food related","HMDB: HMDB0004362"
+NA,"-","BW245C",1,"Unknown",NA
+NA,"-","13-METHYL-4,4-BISNOR-8,11,13-PODOCARPATRIEN-3-ONE",1,"Unknown",NA
+NA,"-","3-Hydroxy-T2Toxin",1,"Unknown",NA
+"HMDB0038152","-","LucidoneC",1,"Food related","HMDB: HMDB0038152"
+NA,"-","5-hydroxy-3-(4-hydroxy-3-methoxyphenyl)-7-methoxy-8-methyl-3,4-dihydro-2H-1-benzopyran-4-one",1,"Unknown",NA
+NA,"-","(2-methoxy-4-{2-[(1R,16Z,24E,26E,28Z)-1,13,18-trihydroxy-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-2,3,10,14,20-pentaoxo-11,36-dioxa-4-azatricyclo[30.3.1.0,hexatriaconta-16,24,26,28-tetraen-12-ylpropyl}cyclohexyl)oxidanesulfonicacid",1,"Unknown",NA
+"HMDB0036686","-","2,2,6,7-Tetramethylbicyclo[4.3.0nona-1(9),4-diene-7,8-diol",1,"Food related","HMDB: HMDB0036686"
+"HMDB0033857","C08499","2,6-nonadienal",1,"Food related","HMDB: HMDB0033857"
+"HMDB0060672","C16660","2-Ethyl-5-methyl-3,3-diphenyl-1-pyrroline",1,"Drug related","HMDB: HMDB0060672"
+"HMDB0059899","C14395","Alpha-Methylstyrene",1,"Unknown",""
+"HMDB0245089","C02395","Cyclohex-2-enone",1,"Unknown",""
+"HMDB0034295","C19621","Floionolicacid",1,"Food related","HMDB: HMDB0034295"
+"HMDB0029697","C02394","Cinnamylalcohol",1,"Drug related","DrugBank: DB14186"
+NA,"-","(+/-)-3,4-Methylenedioxy-5,7-dimethylepicatechin",1,"Unknown",NA
+"HMDB0032014","-","2,5-Dimethylbenzaldehyde",1,"Food related","HMDB: HMDB0032014"
+NA,"-","7-Sulfocholicacid",1,"Unknown",NA
+"HMDB0029638","C06758","P-Tolualdehyde",1,"Microbiota","KEGG: C06758"
+"HMDB0031616","-","4-Phenyl-3-buten-2-ol",1,"Food related","HMDB: HMDB0031616"
+NA,"-","(1R)-Nepetalicacid",1,"Unknown",NA
+"HMDB0034293","-","Asperagenin",1,"Food related","HMDB: HMDB0034293"
+"HMDB0041700","-","6-Hydroxyenterolactone",1,"Food related","HMDB: HMDB0041700"
+"HMDB0035498","-","FevicordinB2-[rhamnosyl-(1-4)-glucosyl-(1-6)-glucoside",1,"Food related","HMDB: HMDB0035498"
+NA,"C03571","2-Amino-2-methylbutanoate",1,"Unknown",""
+"HMDB0011668","C15658","6-(alpha-D-Glucosaminyl)-1D-myo-inositol",1,"Microbiota","KEGG: C15658"
+"HMDB0062660","C01046","N-Methylglutamicacid",1,"Microbiota","KEGG: C01046"
+"HMDB0011177","-","L-phenylalanyl-L-proline",1,"Unknown",NA
+"HMDB0012240","-","Isopentenyladenine-9-N-glucoside",1,"Unknown",NA
+NA,"-","3-[3,4-dihydroxy-2-(4-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)phenylpropanoicacid",1,"Unknown",NA
+"HMDB0040901","-","13-Hydroxy-9-methoxy-10-oxo-11-octadecenoicacid",1,"Food related","HMDB: HMDB0040901"
+NA,"-","ThrPheLeuThrGln",1,"Unknown",NA
+NA,"-","ProHis",1,"Unknown",NA
+NA,"-","GluLeu",1,"Unknown",NA
+NA,"-","ValGlu",1,"Unknown",NA
+"HMDB0001388","C06427","Alpha-Linolenicacid",1,"Co-Metabolism","KEGG: C06427"
+NA,"-","GluVal",1,"Unknown",NA
+"HMDB0028822","-","Glutamylisoleucine",1,"Unknown",NA
+NA,"-","GlyPhe",1,"Unknown",NA
+NA,"-","HYMECROMONEMETHYLETHER",1,"Unknown",NA
+NA,"-","ProArg",1,"Unknown",NA
+NA,"-","LysIleLeu",1,"Unknown",NA
+"HMDB0038352","-","LucidenicacidN",1,"Food related","HMDB: HMDB0038352"
+NA,"-","AlaLeuVal",1,"Unknown",NA
+NA,"-","TyrGlu",1,"Unknown",NA
+NA,"-","6-{[2-(2,4-dihydroxyphenyl)-7-hydroxy-3-(8-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)-6-(3-methylbut-2-en-1-yl)-4-oxo-4H-chromen-5-yloxy}-3,4,5-trihydroxyoxane-2-carboxylicacid",1,"Unknown",NA
+NA,"-","HisVal",1,"Unknown",NA
+NA,"-","ValPro",1,"Unknown",NA
+NA,"-","GlyLeu",1,"Unknown",NA
+"HMDB0060127","-","25-HydroxyvitaminD3-26,23-lactol",1,"Food related","HMDB: HMDB0060127"
+"HMDB0030915","-","AlliospirosideD",1,"Food related","HMDB: HMDB0030915"
+NA,"-","GlyVal",1,"Unknown",NA
+"HMDB0011556","-","MG(0:0/22:5(7Z,10Z,13Z,16Z,19Z)/0:0)",1,"Food related","HMDB: HMDB0011556"
+NA,"-","ArgValLeu",1,"Unknown",NA
+"HMDB0006236","C00601","Phenylacetaldehyde",1,"Co-Metabolism","KEGG: C00601"
+NA,"-","PheProIle",1,"Unknown",NA
+"HMDB0000672","C19615","Hexadecanedioicacid",1,"Food related","HMDB: HMDB0000672"
+NA,"-","ThrValVal",1,"Unknown",NA
+NA,"-","ThrProIle",1,"Unknown",NA
+NA,"-","ValGluAla",1,"Unknown",NA
+"HMDB0003797","C04056","Bovinicacid",1,"Food related","HMDB: HMDB0003797"
+NA,"-","GluGlyAsnTrp",1,"Unknown",NA
+NA,"-","ValLys",1,"Unknown",NA
+"HMDB0000313","C05300","16b-Hydroxyestrone",1,"Co-Metabolism","KEGG: C05300"
+"HMDB0011648","C15497","1-(beta-D-Ribofuranosyl)-1,4-dihydronicotinamide",1,"Unknown",""
+NA,"-","LeuThrSerLysTyr",1,"Unknown",NA
+"HMDB0013317","-","Tridecanoylglycine",1,"Unknown",NA
+NA,"-","GlyValVal",1,"Unknown",NA
+NA,"-","PheAspIle",1,"Unknown",NA
+"HMDB0006248","C03740","5-L-Glutamyl-L-alanine",1,"Co-Metabolism","KEGG: C03740"
+NA,"-","GluAsnLeu",1,"Unknown",NA
+NA,"-","GlyIleLys",1,"Unknown",NA
+NA,"-","HisProVal",1,"Unknown",NA
+"HMDB0003464","C01035","4-Guanidinobutanoicacid",1,"Co-Metabolism","KEGG: C01035"
+NA,"-","ArgAspIle",1,"Unknown",NA
+NA,"-","GluValAla",1,"Unknown",NA
+NA,"-","IleSerThrGlu",1,"Unknown",NA
+NA,"-","IleThrIle",1,"Unknown",NA
+NA,"-","IleGlyLys",1,"Unknown",NA
+NA,"-","GlyMet",1,"Unknown",NA
+NA,"-","ThrAspIleThr",1,"Unknown",NA
+NA,"-","IleProIle",1,"Unknown",NA
+NA,"-","(+/-)-Furilazole",1,"Unknown",NA
+NA,"-","(1R*,3R*,3S*)-1,2,3,4-Tetrahydro-1-(2-thio-3-pyrrolidinyl)-beta-carboline-3-carboxylicacid",1,"Unknown",NA
+"HMDB0039171","-","9alpha-(3-Methylbutanoyloxy)-4S-hydroxy-10(14)-oplopen-3-one",1,"Food related","HMDB: HMDB0039171"
+"HMDB0028879","-","Histidinyl-Arginine",1,"Unknown",NA
+"HMDB0002285","-","2-Indolecarboxylicacid",1,"Unknown",NA
+"HMDB0029059","-","Threoninyl-Glutamine",1,"Unknown",NA
+"HMDB0041023","-","Reticulatamol",1,"Food related","HMDB: HMDB0041023"
+"HMDB0035165","-","CinncassiolA19-glucoside",1,"Food related","HMDB: HMDB0035165"
+NA,"-","ValIleThrAsn",1,"Unknown",NA
+"HMDB0000874","C16868","Tauroursodeoxycholicacid",1,"Drug related","KEGG: C16868; DrugBank: DB08834"
+"HMDB0030394","-","Simmondsin",1,"Food related","HMDB: HMDB0030394"
+"HMDB0000038","C02953","7,8-dihydro-L-Biopterin",1,"Co-Metabolism","KEGG: C02953"
+NA,"-","SerLeuIle",1,"Unknown",NA
+NA,"-","ThrGln",1,"Unknown",NA
+"HMDB0000559","-","(3-Methoxy-4-hydroxyphenyl)ethyleneglycolsulfate",1,"Unknown",NA
+"HMDB0030409","-","4-Amino-2-methylenebutanoicacid",1,"Food related","HMDB: HMDB0030409"
+"HMDB0251473","-","DIPROTINA",1,"Unknown",NA
+NA,"-","GlyArg",1,"Unknown",NA
+"HMDB0000517","C00062","L-Arginine",1,"Co-Metabolism","KEGG: C00062"
+NA,"-","GlyLeuArg",1,"Unknown",NA
+"HMDB0028923","-","Leucyl-Arginine",1,"Unknown",NA
+"HMDB0033503","-","Smallbacteriocin",1,"Food related","HMDB: HMDB0033503"
+"HMDB0028876","-","Hydroxyprolyl-Valine",1,"Unknown",NA
+"HMDB0030772","-","Demethoxyegonol",1,"Food related","HMDB: HMDB0030772"
+NA,"-","ValValLeu",1,"Unknown",NA
+NA,"-","ProMetValPro",1,"Unknown",NA
+"HMDB0032685","-","(14alpha,17beta,20S,22R)-14,20-Epoxy-17-hydroxy-1-oxowitha-3,5,24-trienolide",1,"Food related","HMDB: HMDB0032685"
+NA,"-","GlnArg",1,"Unknown",NA
+NA,"-","AsnIleArg",1,"Unknown",NA
+NA,"-","3-N-Acetylfusarochromanone",1,"Unknown",NA
+NA,"-","11-[(2R,3S)-3-[2-amino-3-methyl-4-(2-methyl-1,3-thiazol-4-yl)but-3-en-1-yl-2-methyloxiran-2-yl-3,7-dihydroxy-4,4,6,8-tetramethyl-5-oxoundecanoicacid",1,"Unknown",NA
+NA,"-","GluIleVal",1,"Unknown",NA
+NA,"-","LeuGluLeu",1,"Unknown",NA
+NA,"-","GluIleLeu",1,"Unknown",NA
+"HMDB0041517","-","Beta-D-Glucopyranosylanthranilate",1,"Food related","HMDB: HMDB0041517"
+"HMDB0029081","-","Tryptophyl-Glutamine",1,"Unknown",NA
+NA,"-","IleSerLeuSer",1,"Unknown",NA
+"HMDB0012212","-","Dihydrozeatin-9-N-glucoside-O-glucoside",1,"Food related","HMDB: HMDB0012212"
+NA,"-","IleArg",1,"Unknown",NA
+NA,"-","LysoPA(P-16:0e/0:0)",1,"Unknown",NA
+NA,"-","(+/-)-Naringenin",1,"Unknown",NA
+NA,"-","IleGluLeu",1,"Unknown",NA
+NA,"-","AspThrGlnSer",1,"Unknown",NA
+"HMDB0037235","-","Quassinol",1,"Food related","HMDB: HMDB0037235"
+"HMDB0004157","C05789","L-Urobilinogen",1,"Unknown",""
+"HMDB0035243","C17268","Pyruvophenone",1,"Food related","HMDB: HMDB0035243"
+"HMDB0029062","-","Threoninyl-Hydroxyproline",1,"Unknown",NA
+"HMDB0005768","C02993","Kyotorphin",1,"Unknown",""
+"HMDB0029128","-","Valyl-Hydroxyproline",1,"Unknown",NA
+"HMDB0039331","C13837","DehydrosoyasaponinI",1,"Food related","HMDB: HMDB0039331"
+NA,"-","ValThrIleAsp",1,"Unknown",NA
+"HMDB0030328","C10359","Petasitenine",1,"Food related","HMDB: HMDB0030328"
+"HMDB0003252","C05963","ThromboxaneB2",1,"Food related","HMDB: HMDB0003252"
+NA,"-","IleGluLeuLys",1,"Unknown",NA

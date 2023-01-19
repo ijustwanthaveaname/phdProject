@@ -7,8 +7,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
 
-
-
 def knn_iris():
     iris = load_iris()
     x_train, x_test, y_train, y_test = train_test_split(
@@ -45,11 +43,13 @@ def decision_iris():
 def rf():
     iris = load_iris()
     x_train, x_test, y_train, y_test = train_test_split(iris.data, iris.target)
-    param_dict = {"n_estimators": [120, 200, 300, 500, 800, 1200],"max_depth": [5, 8 ,15, 25, 30]}
+    param_dict = {"n_estimators": [
+        120, 200, 300, 500, 800, 1200], "max_depth": [5, 8, 15, 25, 30]}
     estimator = RandomForestClassifier()
     estimator = GridSearchCV(estimator, param_grid=param_dict, cv=10)
-    estimator.fit()
-    
+    estimator.fit(x_train, y_train)
+
+
 if __name__ == "__main__":
     # knn_iris()
     # decision_iris()

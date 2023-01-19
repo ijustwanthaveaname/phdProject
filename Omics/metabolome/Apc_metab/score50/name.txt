@@ -1,0 +1,930 @@
+	metab_id	Metabolite	ID	KEGG.Compound.ID	Library.ID
+13	metab_12	Pantothenic Acid	pos_13	C00864	79-83-4;HMDB0000210;HMDB0250782
+15	metab_14	Phenylacetylglycine	pos_15	C05598	HMDB0000821
+25	metab_24	Aminoethoxyacetic acid	pos_25	-	HMDB0060587
+38	metab_37	Gln Ser Arg	pos_38	-	-
+95	metab_94	PG(18:1(9Z)/0:0)	pos_95	-	HMDB0240602;LMGP04050006
+97	metab_96	Prolyl-Glutamate	pos_97	-	HMDB0029016
+100	metab_99	Sambutoxin	pos_100	-	HMDB0041085
+148	metab_147	Val Ser Pro Phe	pos_150	-	-
+157	metab_156	Val Lys	pos_159	-	-
+160	metab_159	Thr Gln	pos_162	-	-
+165	metab_164	N-Acetyl-a-neuraminic acid	pos_167	C19909	HMDB0000773
+178	metab_177	Pro Ser Ser	pos_180	-	-
+230	metab_229	PI(O-16:0/0:0)	pos_234	-	LMGP06060003
+240	metab_239	N-Acetyl-b-neuraminic acid	pos_244	-	-
+257	metab_256	1-Kestose	pos_262	C03661	HMDB0011729
+264	metab_263	Asp Thr Gln Ser	pos_269	-	-
+267	metab_266	(2E,4E)-2,7-Dimethyl-2,4-octadienedioic acid	pos_272	-	HMDB0034099
+274	metab_273	Fluvoxamino acid	pos_279	-	HMDB0060950
+285	metab_284	3-(3,4-dimethoxyphenyl)-6-hydroxy-7-methoxy-3,4-dihydro-2H-1-benzopyran-4-one	pos_290	-	-
+287	metab_286	7-hydroxyolanzapine	pos_292	-	HMDB0060958
+289	metab_288	Glutaminyltryptophan	pos_294	-	HMDB0028808
+304	metab_303	8-Deoxy-11,13-dihydroxygrosheimin	pos_309	-	HMDB0041144
+305	metab_304	4-oxo-Retinoic acid	pos_310	C16678	HMDB0006285;38030-57-8
+329	metab_328	Pregnan-20-one, 17-(acetyloxy)-3-hydroxy-6-methyl-, (3a,5b,6a)-	pos_334	-	-
+332	metab_331	3a,7a,12a-Trihydroxy-5b-cholestan-26-al	pos_337	C01301	HMDB0003533;3836-01-9
+358	metab_357	Alpha-Linolenic acid	pos_363	C06427	HMDB0001388;463-40-1;LMFA01030152
+360	metab_359	3b,12a-Dihydroxy-5a-cholanoic acid	pos_365	-	HMDB0000348
+363	metab_362	2E,6E,8E-decatrienoic acid	pos_368	-	LMFA01030215
+366	metab_365	D8'-Merulinic acid C	pos_371	-	-
+369	metab_368	13-METHYL-4,4-BISNOR-8,11,13-PODOCARPATRIEN-3-ONE	pos_374	-	-
+397	metab_396	Tauroursodeoxycholic acid	pos_402	C16868	LMST05040015;HMDB0000874
+403	metab_402	2-amino-6-hydroxyhexanoic acid	pos_408	-	-
+433	metab_432	PC(18:1/0:0)	pos_438	-	LMGP01050030;LMGP01050029
+461	metab_460	His Val	pos_466	-	-
+476	metab_475	Lupinate	pos_481	C01513	HMDB0302524
+477	metab_476	Pro Gly Asn Lys	pos_482	-	-
+478	metab_477	Nalpha-Acetyl-L-glutamine	pos_483	-	-
+486	metab_485	1-Pyrroline-4-hydroxy-2-carboxylate	pos_492	C04282	9054-77-7;HMDB0002234
+489	metab_488	Glu Val	pos_495	-	-
+513	metab_512	Guanosine	pos_521	C00387	HMDB0000133;118-00-3
+521	metab_520	N-Methyl-4-pyridone-3-carboxamide	pos_529	-	-
+528	metab_527	Lys Tyr Val Tyr	pos_536	-	-
+538	metab_537	Glycylproline	pos_546	-	HMDB0000721
+547	metab_546	N-Formyl-L-methionine	pos_555	C03145	HMDB0001015
+709	metab_708	L-Aspartic Acid	pos_723	C00049	56-84-8;HMDB0000191
+716	metab_715	Thr Ile Thr Thr	pos_731	-	-
+720	metab_719	Pyridoxine	pos_735	C00314	HMDB0301760;HMDB0000239;65-23-6
+727	metab_726	Trimethylamine N-oxide	pos_742	C01104	HMDB0000925
+731	metab_730	4-Methylene-L-glutamine	pos_747	C01109	-
+799	metab_798	Ile Gln Ser Lys	pos_821	-	-
+905	metab_904	Asn Arg	pos_933	-	-
+906	metab_905	N-METHYLANTHRANILIC ACID	pos_934	C03005	HMDB0032609
+969	metab_968	N-Methylglutamic acid	pos_1003	C01046	HMDB0062660
+978	metab_977	Aminoacetone	pos_1012	C01888	298-08-8;HMDB0002134
+983	metab_982	Pro Gly Lys Asn	pos_1017	-	-
+987	metab_986	Val Ser Lys	pos_1021	-	-
+1012	metab_1011	Nomega-Acetylhistamine	pos_1047	C05135	HMDB0013253
+1016	metab_1015	Withaperuvin H	pos_1051	-	HMDB0034061
+1018	metab_1017	THTC	pos_1053	C11074	-
+1023	metab_1022	Leu Asn Lys	pos_1058	-	-
+1048	metab_1047	Thr Asn Thr Glu	pos_1083	-	-
+1065	metab_1064	Ent-15-Kaurene-17,19-dioic acid	pos_1101	-	HMDB0036726
+1068	metab_1067	Leu Glu Leu	pos_1104	-	-
+1127	metab_1126	Phe Asp Ile	pos_1163	-	-
+1128	metab_1127	6-({1-[(2R)-3-[2-amino-3-methyl-4-(2-methyl-1,3-thiazol-4-yl)but-3-en-1-yl]-2-methyloxiran-2-yl]-10-carboxy-9-hydroxy-4,6,8,8-tetramethyl-7-oxodecan-5-yl}oxy)-3,4,5-trihydroxyoxane-2-carboxylic acid	pos_1164	-	-
+1146	metab_1145	3-(1,2-dihydroxybutyl)-7-hydroxy-1H-isochromen-1-one	pos_1182	-	-
+1147	metab_1146	3,4,5-Trimethoxycinnamic acid	pos_1183	-	HMDB0002511
+1209	metab_1208	Leu Thr Ser Lys Tyr	pos_1245	-	-
+1317	metab_1316	3a,6b,7b,12a-Tetrahydroxy-5b-cholanoic acid	pos_1354	-	HMDB0000367
+1319	metab_1318	6E,8E,12E,14E-Hexadecatetraen-10-ynoic acid	pos_1357	-	LMFA01030703
+1320	metab_1319	Alpha-9(10)-EpODE	pos_1358	-	LMFA02000039;HMDB0010220
+1321	metab_1320	17-phenyl trinor PGF2alpha methyl ester	pos_1359	-	-
+1328	metab_1327	Sphingosine	pos_1366	C00319	HMDB0000252;LMSP01010001;123-78-4
+1331	metab_1330	Alpha-Methylstyrene	pos_1369	C14395	HMDB0059899
+1355	metab_1354	LysoPE(15:0/0:0)	pos_1394	-	HMDB0011502
+1369	metab_1368	PE(16:0/0:0)	pos_1409	-	LMGP02050002;HMDB0011503
+1371	metab_1370	Farnesyl acetone	pos_1411	-	-
+1394	metab_1393	Palmitoyl-L-carnitine	pos_1436	C02990	HMDB0000222
+1423	metab_1422	1-Stearoylglycerophosphocholine	pos_1466	C04230	HMDB0010384
+1451	metab_1450	2,6-nonadienal	pos_1495	C08499	HMDB0033857;LMFA06000046;HMDB0302431
+1494	metab_1493	Ceanothine D	pos_1543	-	HMDB0029341
+1533	metab_1532	PG(16:0/0:0)[U]	pos_1585	-	-
+1537	metab_1536	DG(18:0/18:2(9Z,12Z)/0:0)	pos_1589	C00165	34487-26-8;HMDB0007161
+1558	metab_1557	23S,25,26-Trihydroxyvitamin D3	pos_1610	-	HMDB0060134
+1590	metab_1589	BICINE	pos_1643	-	HMDB0011727
+1714	metab_1713	LysoPC(18:2(9Z,12Z))	pos_1768	-	HMDB0061700;HMDB0010386
+1716	metab_1715	LysoPC(20:3(5Z,8Z,11Z))	pos_1770	-	HMDB0010393
+1743	metab_1742	2-Pyrrolidinone	pos_1798	C11118	HMDB0002039
+1763	metab_1762	9-Oxohexadecanoic acid	pos_1818	-	HMDB0030973
+1779	metab_1778	(E)-11-Hexadecenoic acid	pos_1834	-	HMDB0037647
+1799	metab_1798	(+/-)-Myrtenyl acetate	pos_1856	-	HMDB0035126
+1832	metab_1831	10Z-Nonadecenoic acid	pos_1891	-	HMDB0013622;LMFA01030362
+1871	metab_1870	MG(0:0/22:5(7Z,10Z,13Z,16Z,19Z)/0:0)	pos_1930	-	LMGL01010037;HMDB0011556
+1876	metab_1875	Lucidone C	pos_1935	-	HMDB0038152
+1881	metab_1880	7,8-Dehydro-beta-micropteroxanthin	pos_1940	-	HMDB0038506
+1932	metab_1931	6-(2,4-dihydroxyphenyl)-2-{3-[3-(2,4-dihydroxyphenyl)propanoyl]-2,6-dihydroxyphenyl}-5-hydroxy-4-methylcyclohex-3-ene-1-carboxylic acid	pos_1991	-	-
+1951	metab_1950	C12:4n-2,4,8,10	pos_2010	-	LMFA01030240
+1956	metab_1955	Thr Phe Leu Thr Gln	pos_2015	-	-
+1973	metab_1972	Glu Gln His	pos_2032	-	-
+1989	metab_1988	Glycerophosphocholine	pos_2048	C00670	HMDB0007930;HMDB0008227;HMDB0008159;HMDB0007929;HMDB0008194;HMDB0008721;HMDB0008490;HMDB0008063;HMDB0008259;HMDB0011227;HMDB0008720;HMDB0008128;HMDB0008491;HMDB0008458;HMDB0008127;HMDB0008326;HMDB0008095;HMDB0008358;HMDB0007895;HMDB0008524;HMDB0008161;HMDB0008521;HMDB0007963;HMDB0008294;HMDB0008555;HMDB0008195;HMDB0008687;HMDB0008621;HMDB0008225;HMDB0008390;HMDB0008455;HMDB0008292;HMDB0008619;HMDB0008489;HMDB0007931;HMDB0008820;HMDB0011224;HMDB0008359;HMDB0008523;HMDB0008457;HMDB0011225;HMDB0007997;HMDB0008261;HMDB0008258;HMDB0008785;HMDB0008162;HMDB0008062;HMDB0008819;HMDB0011221;HMDB0007994;HMDB0008587;HMDB0008094;HMDB0008422;HMDB0007995;HMDB0008060;HMDB0008096;HMDB0008786;HMDB0008293;HMDB0008360;28319-77-9;HMDB0008817;HMDB0008719;HMDB0008818;HMDB0008456;HMDB0008392;HMDB0008753;HMDB0008488;HMDB0007896;HMDB0008030;HMDB0008554;HMDB0008586;HMDB0008653;HMDB0008357;HMDB0008557;HMDB0008228;HMDB0008325;HMDB0008160;HMDB0008027;HMDB0008061;HMDB0008291;HMDB0000086;HMDB0008784;HMDB0008093;HMDB0008556;HMDB0008393;HMDB0008327;HMDB0008424;HMDB0008193;HMDB0008589;HMDB0008423;HMDB0008425;HMDB0011226;HMDB0007962;HMDB0008588;HMDB0008391;HMDB0008685;HMDB0008226;HMDB0008718;HMDB0007996;HMDB0011222;HMDB0008654;HMDB0008620;HMDB0011228;HMDB0008652;HMDB0008622;HMDB0011223;HMDB0011290;HMDB0008260;HMDB0007928;HMDB0008787
+1990	metab_1989	Ile Arg	pos_2049	-	-
+2006	metab_2005	Ile Asp Lys	pos_2066	-	-
+2031	metab_2030	N-Acetyl-L-glutamic acid	pos_2091	C00624	HMDB0001138
+2043	metab_2042	Gly Val Thr Leu	pos_2103	-	-
+2065	metab_2064	Ser Leu	pos_2125	-	-
+2078	metab_2077	7,8-dihydro-L-Biopterin	pos_2139	C02953	HMDB0000038;HMDB0247294
+2118	metab_2117	Arg Ala Leu	pos_2179	-	-
+2151	metab_2150	Arg Phe	pos_2213	-	-
+2153	metab_2152	Gly Leu Arg	pos_2215	-	-
+2154	metab_2153	Galactosyl 4-hydroxyproline	pos_2216	-	HMDB0029353
+2162	metab_2161	L-Agaridoxin	pos_2224	-	HMDB0029445
+2174	metab_2173	Tyr Trp Tyr Arg	pos_2236	-	-
+2193	metab_2192	Guanine	pos_2255	C00242	73-40-5;HMDB0000132
+2243	metab_2242	Ile Ile Arg	pos_2305	-	-
+2298	metab_2297	Tyr Val	pos_2362	-	-
+2303	metab_2302	Asn Leu	pos_2367	-	-
+2329	metab_2328	METHACHOLINE	pos_2393	C07471	HMDB0015654
+2359	metab_2358	Arg Gly Ser Thr	pos_2424	-	-
+2361	metab_2360	Adenosine 3'-monophosphate	pos_2426	-	-
+2386	metab_2385	Gly Phe	pos_2451	-	-
+2401	metab_2400	Glu Asn Leu	pos_2467	-	-
+2417	metab_2416	Ile Arg Leu	pos_2483	-	-
+2439	metab_2438	Asp Pro Ile	pos_2505	-	-
+2444	metab_2443	Ile Glu Leu Lys	pos_2510	-	-
+2474	metab_2473	Tyr Leu	pos_2541	-	-
+2542	metab_2541	Glu Ile Val	pos_2610	-	-
+2544	metab_2543	Ile Phe Val Lys	pos_2612	-	-
+2553	metab_2552	Ser Trp	pos_2621	-	-
+2566	metab_2565	2-Formaminobenzoylacetate	pos_2635	C05835	-
+2572	metab_2571	Gln Leu Val	pos_2641	-	-
+2573	metab_2572	Ala Phe Ile Arg	pos_2642	-	-
+2582	metab_2581	Pro Gln Ala	pos_2651	-	-
+2590	metab_2589	N-Acetylvanilalanine	pos_2659	-	HMDB0011716
+2622	metab_2621	Amphibine H	pos_2691	-	HMDB0029333
+2638	metab_2637	Indole-3-acetamide	pos_2708	C02693	HMDB0029739
+2647	metab_2646	Val Ile Thr Asn	pos_2717	-	-
+2657	metab_2656	(1R,16Z,24E,26E,28Z)-1,18,30-trihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19-methoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0⁴,⁹]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	pos_2727	-	-
+2750	metab_2749	5-Hydroxyindoleacetic acid	pos_2824	C05635	54-16-0;HMDB0000763
+2778	metab_2777	Tetradecanedioic acid	pos_2853	C11002	HMDB0000872;LMFA01170018
+2897	metab_2896	1,4,5,8-TETRAHYDROXY-2,6-DIMETHYLANTHROQUINONE	pos_2977	-	-
+2931	metab_2930	Gly Glu Pro	pos_3018	-	-
+2933	metab_2932	Thr Leu Trp Thr	pos_3020	-	-
+2947	metab_2946	Asn Thr	pos_3040	-	-
+2950	metab_2949	S-Adenosylmethionine	pos_3044	C00019	485-80-3;HMDB0001185
+3116	metab_3115	Arg Glu	pos_3246	-	-
+3133	metab_3132	L-Proline	pos_3264	C00148	HMDB0000162;HMDB0251528;147-85-3
+3137	metab_3136	Imidazole lactate	pos_3270	C05568	HMDB0253418
+3140	metab_3139	1-[2,4-dihydroxy-5-(4-hydroxy-3-methylbut-2-en-1-yl)phenyl]-2-hydroxy-3-[4-hydroxy-3-(3-methylbut-2-en-1-yl)phenyl]propan-1-one	pos_3275	-	-
+3146	metab_3145	Pro His	pos_3286	-	-
+3171	metab_3170	Gly Ser Pro	pos_3318	-	-
+3177	metab_3176	Asparaginyl-Glutamic acid	pos_3324	-	HMDB0028730
+3183	metab_3182	Ser Ser Pro	pos_3331	-	-
+3214	metab_3213	Niacinamide	pos_3367	C00153	HMDB0001406;98-92-0
+3224	metab_3223	Val Glu	pos_3377	-	-
+3230	metab_3229	Val Asn Glu	pos_3384	-	-
+3247	metab_3246	L-Homocitrulline	pos_3402	C02427	HMDB0000679
+3249	metab_3248	Gln Pro Ser	pos_3404	-	-
+3289	metab_3288	Asn Pro Ala	pos_3446	-	-
+3290	metab_3289	Cytidine	pos_3447	C00475	HMDB0000089;HMDB0248553;65-46-3
+3298	metab_3297	Nalpha-Acetyl-L-arginine	pos_3455	-	-
+3320	metab_3319	Asp His Lys	pos_3479	-	-
+3323	metab_3322	Urocanic acid	pos_3482	C00785	HMDB0000301;HMDB0062562;104-98-3
+3337	metab_3336	Tyr Arg	pos_3498	-	-
+3346	metab_3345	Nigakihemiacetal B	pos_3508	C08771	HMDB0035922
+3351	metab_3350	Gamma-Glutamyl-beta-aminopropiononitrile	pos_3513	C06114	HMDB0060477
+3355	metab_3354	Uric acid	pos_3517	C00366	69-93-2;HMDB0000289
+3362	metab_3361	Gly Pro Glu Glu	pos_3524	-	-
+3371	metab_3370	N-ACETYLPROLINE	pos_3534	-	HMDB0094701;HMDB0242126
+3385	metab_3384	Arg Thr Asn	pos_3549	-	-
+3389	metab_3388	Epidermin	pos_3553	-	HMDB0034777
+3391	metab_3390	Suberylglycine	pos_3555	-	HMDB0000953
+3403	metab_3402	Glutamylasparagine	pos_3567	-	HMDB0028814
+3404	metab_3403	His Pro Val	pos_3568	-	-
+3415	metab_3414	Malonylcarnitine	pos_3579	-	LMFA07070093;LMFA07070080;HMDB0002095
+3480	metab_3479	His Leu Ala	pos_3646	-	-
+3502	metab_3501	Hypoxanthine	pos_3670	C00262	68-94-0;HMDB0000157
+3507	metab_3506	Ser Val	pos_3676	-	-
+3539	metab_3538	Omega-hydroxyfinasteride	pos_3710	-	HMDB0061030
+3542	metab_3541	Gly Pro Pro Gln	pos_3713	-	-
+3560	metab_3559	Arg Asp Ile	pos_3733	-	-
+3571	metab_3570	Phe Thr Lys	pos_3744	-	-
+3587	metab_3586	Porphobilinogen	pos_3764	C00931	HMDB0000245;487-90-1
+3601	metab_3600	Arg Glu Leu	pos_3779	-	-
+3618	metab_3617	Thr Asp Ile Ser	pos_3796	-	-
+3621	metab_3620	Asn Ile Arg	pos_3800	-	-
+3674	metab_3673	Thr Asp Ile Thr	pos_3863	-	-
+3676	metab_3675	Asp Lys Val Pro	pos_3865	-	-
+3691	metab_3690	Valinopine	pos_3881	C19976	-
+3727	metab_3726	Asn Pro Leu	pos_3921	-	-
+3759	metab_3758	Tyrosyl-Serine	pos_3957	-	HMDB0029114
+3814	metab_3813	Tyrosyl-Histidine	pos_4022	-	HMDB0029107
+3825	metab_3824	Glu Gly Asn Trp	pos_4034	-	-
+3839	metab_3838	Todatriol glucoside	pos_4048	-	HMDB0037260
+3854	metab_3853	Arg Ile Leu	pos_4064	-	-
+3869	metab_3868	CDP-DG(18:0/22:3(10Z,13Z,16Z))	pos_4084	-	LMGP13010019;HMDB0006984
+3886	metab_3885	(2'E,4'Z,7'Z,8E)-Colnelenic acid	pos_4102	-	-
+3907	metab_3906	Beta-D-Glucopyranosyl anthranilate	pos_4125	-	HMDB0041517
+3916	metab_3915	Lys Ile Leu	pos_4135	-	-
+3926	metab_3925	Gln Val Leu	pos_4146	-	-
+3936	metab_3935	Tyrosyl-Leucine	pos_4157	-	HMDB0029109
+3946	metab_3945	Phenylalanyl-Valine	pos_4168	-	HMDB0029008
+3952	metab_3951	Ala Leu Val	pos_4175	-	-
+3977	metab_3976	L-Hypoglycin A	pos_4205	C08287	HMDB0029427
+4002	metab_4001	Pro Gly Glu Ile	pos_4231	-	-
+4050	metab_4049	3-(3,7-dimethylocta-2,6-dien-1-yl)-5,7-dihydroxy-6-(3-methylbut-2-en-1-yl)-2-(2,4,5-trihydroxyphenyl)-3,4-dihydro-2H-1-benzopyran-4-one	pos_4285	-	-
+4077	metab_4076	L-phenylalanyl-L-proline	pos_4313	-	HMDB0011177
+4107	metab_4106	Piperalol	pos_4350	-	HMDB0035767
+4110	metab_4109	Diethyldithiocarbamate (DDC)	pos_4353	-	-
+4147	metab_4146	Aginoside progenin	pos_4392	-	HMDB0034595
+4158	metab_4157	Gln Leu Lys	pos_4403	-	-
+4203	metab_4202	Gly Thr Phe Leu	pos_4450	-	-
+4209	metab_4208	Val Pro Phe	pos_4456	-	-
+4220	metab_4219	Cinncassiol A	pos_4467	C17645	HMDB0035164
+4271	metab_4270	Lysyl-Proline	pos_4525	-	HMDB0028959
+4300	metab_4299	Oxindole	pos_4559	C12312	HMDB0244886;HMDB0061918
+4303	metab_4302	Glu Ile Leu	pos_4563	-	-
+4316	metab_4315	Carboxyprimaquine	pos_4576	-	HMDB0247386
+4322	metab_4321	Quinquenoside IV	pos_4582	-	HMDB0032829
+4328	metab_4327	Endomorphin-1	pos_4588	C15890	HMDB0005773
+4351	metab_4350	Fevicordin B 2-gentiobioside	pos_4613	-	HMDB0035296
+4365	metab_4364	5-hydroxy-3,6,7,8-tetramethoxy-2-phenyl-4H-chromen-4-one	pos_4629	-	-
+4380	metab_4379	3-Methyldioxyindole	pos_4647	C05834	HMDB0004186
+4412	metab_4411	Gln Tyr Ile	pos_4680	-	-
+4440	metab_4439	Arg Phe Phe	pos_4709	-	-
+4451	metab_4450	(R)-Shinanolone	pos_4720	-	HMDB0030580
+4470	metab_4469	Tyr Leu Trp	pos_4741	-	-
+4507	metab_4506	Ser Leu Ile	pos_4779	-	-
+4511	metab_4510	Phe Pro Ile	pos_4783	-	-
+4528	metab_4527	Descladinose roxithromycin	pos_4801	-	HMDB0060814
+4531	metab_4530	Isopentenyladenine-9-N-glucoside	pos_4804	-	HMDB0012240
+4637	metab_4636	Carpaine	pos_4922	C10135	HMDB0030272
+4662	metab_4661	16alpha-hydroxyprednisolone	pos_4949	-	HMDB0244573
+4723	metab_4722	Gibberellin A39	pos_5013	-	HMDB0035045
+4729	metab_4728	N-Acetyltyramine	pos_5020	-	-
+4759	metab_4758	11-dehydro-TXB3	pos_5050	-	LMFA03030009
+4781	metab_4780	Isomaltose	pos_5074	C00252	HMDB0002923
+4805	metab_4804	Aflatoxin B1 dialcohol	pos_5099	-	HMDB0011672
+4806	metab_4805	D-Urobilinogen	pos_5100	C05791	17208-65-0;HMDB0004158
+4812	metab_4811	4R-Hydroxy solifenacin	pos_5107	-	HMDB0061127
+4823	metab_4822	5-NITRO-2-PHENYLPROPYLAMINOBENZOIC ACID [NPPB]	pos_5118	-	-
+4827	metab_4826	N-2-[4-(3,3-Dimethylallyloxy)phenyl]ethylcinnamide	pos_5122	-	HMDB0030193
+4831	metab_4830	Beta-Doradecin	pos_5126	-	HMDB0039143
+4833	metab_4832	(17Z)-1alpha,25-dihydroxy-26,27-dimethyl-17,20,22,22,23,23-hexadehydrovitamin D3	pos_5128	-	LMST03020391
+4840	metab_4839	Yucalexin B5	pos_5138	-	HMDB0035200
+4860	metab_4859	4-formyl Indole	pos_5162	-	-
+4911	metab_4910	SARMENTOSIDE B	pos_5219	-	-
+4913	metab_4912	L-Nicotianine	pos_5221	-	HMDB0029397
+4918	metab_4917	4-Oxoisotretinoin	pos_5227	-	-
+4953	metab_4952	Ent-7-Oxo-8(14),15-pimaradien-19-oic acid	pos_5266	-	HMDB0036747
+4976	metab_4975	Quassinol	pos_5289	-	HMDB0037235
+5015	metab_5014	Dehydrosoyasaponin I	pos_5336	C13837	HMDB0039331
+5036	metab_5035	Gln Gln Phe Tyr	pos_5361	-	-
+5044	metab_5043	Ala Thr Phe Lys	pos_5370	-	-
+5064	metab_5063	CITROPTEN	pos_5398	-	HMDB0032952
+5078	metab_5077	Brefeldin A	pos_5414	-	-
+5087	metab_5086	7-Hydroxytrichodermol	pos_5424	-	HMDB0038476
+5123	metab_5122	6-(2-{8,8-dimethyl-2-oxo-2H,8H-pyrano[2,3-f]chromen-3-yl}-5-methoxyphenoxy)-3,4,5-trihydroxyoxane-2-carboxylic acid	pos_5468	-	-
+5131	metab_5130	BW 245C	pos_5479	-	-
+5167	metab_5166	Pyruvophenone	pos_5526	C17268	HMDB0035243
+5177	metab_5176	Asperagenin	pos_5541	-	HMDB0034293
+5179	metab_5178	Cadalene	pos_5544	-	HMDB0059698;LMPR0103330007
+5181	metab_5180	6,9,12-Octadecatriynoic acid	pos_5546	-	LMFA01030554
+5188	metab_5187	Cinnamyl alcohol	pos_5554	C02394	HMDB0029698;HMDB0029697
+5218	metab_5217	4-Phenyl-3-buten-2-ol	pos_5595	-	HMDB0031616
+5220	metab_5219	4-[5]-ladderane-butanoic acid	pos_5597	-	LMFA01140011
+5221	metab_5220	6-[5]-ladderane-hexanoic acid	pos_5598	-	LMFA01140003
+5227	metab_5226	22-Deoxocucurbitacin D	pos_5607	-	HMDB0034705
+5281	metab_5280	LysoPE(0:0/18:0)	pos_5684	-	HMDB0011129
+5284	metab_5283	Oleoyl Ethanolamide	pos_5688	-	HMDB0002088
+5295	metab_5294	5-Deoxymyricanone	pos_5702	-	HMDB0030799
+5303	metab_5302	3'-N'-Acetylfusarochromanone	pos_5710	-	-
+5370	metab_5369	Phytosphingosine-1-P	pos_5803	-	HMDB0012280
+5508	metab_5507	Motrilin	pos_5974	-	HMDB0038654
+5512	metab_5511	Stearoylethanolamide	pos_5980	-	HMDB0013078
+5548	metab_5547	(1'R)-Nepetalic acid	pos_6029	-	-
+5584	metab_5583	(2-methoxy-4-{2-[(1R,16Z,24E,26E,28Z)-1,13,18-trihydroxy-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-2,3,10,14,20-pentaoxo-11,36-dioxa-4-azatricyclo[30.3.1.0⁴,⁹]hexatriaconta-16,24,26,28-tetraen-12-yl]propyl}cyclohexyl)oxidanesulfonic acid	pos_6075	-	-
+5599	metab_5598	PG(i-12:0/a-17:0)	pos_6092	C00344	HMDB0116657
+5628	metab_5627	DG(18:0/0:0/18:2n6)	pos_6124	-	HMDB0056048
+5632	metab_5631	Sorbitan stearate	pos_6128	-	HMDB0029888;LMFA07011020
+5768	metab_5767	N-Jasmonoylisoleucine	pos_6281	C18699	HMDB0029391
+5782	metab_5781	DG(20:1(11Z)/16:1(9Z)/0:0)	pos_6299	C00165	HMDB0007389
+6064	metab_6063	R-(-)-Mandelic acid	pos_6591	-	-
+6103	metab_6102	Phenylpyruvic acid	pos_6630	C00166	HMDB0304081;156-06-9;HMDB0000205
+6179	metab_6178	FAMPRIDINE	pos_6707	-	-
+6358	metab_6357	PC(16:0/0:0)	pos_6898	C04230	LMGP01050018;HMDB0010382
+6359	metab_6358	Chenodeoxycholic acid 3-sulfate	pos_6899	-	LMST05020024;HMDB0002586
+6395	metab_6394	[(16R)-5,7-dihydroxy-8,8,10,16-tetramethyl-3-[1-(2-methyl-1,3-thiazol-4-yl)prop-1-en-2-yl]-12-methylidene-9-oxo-17-oxa-4-azabicyclo[14.1.0]heptadec-4-en-11-yl]oxidanesulfonic acid	pos_6938	-	-
+6403	metab_6402	Methenamine	pos_6946	-	HMDB0029598
+6422	metab_6421	2-(1-Aziridinyl)ethanol	pos_6965	C19332	-
+6490	metab_6489	Trolamine	pos_7037	C06771	HMDB0032538
+6591	metab_6590	Perindoprilat glucuronide	pos_7146	-	HMDB0060863
+6748	metab_6747	5-Acetoxydihydrotheaespirane	pos_7337	-	HMDB0040276
+6752	metab_6751	Floionolic acid	pos_7341	C19621	HMDB0034295
+6764	metab_6763	DG(13:0/22:5(7Z,10Z,13Z,16Z,19Z)/0:0)[iso2]	pos_7356	-	LMGL02010376
+6776	metab_6775	1-Linoleoylglycerophosphocholine	pos_7370	C04100	HMDB0010386
+6854	metab_6853	Sphingosine 1-phosphate (d19:1-P)	pos_7471	-	HMDB0060062
+6879	metab_6878	CL(i-13:0/i-24:0/i-13:0/18:2(9Z,11Z))	pos_7508	C05980	HMDB0074366
+6903	metab_6902	3a,7a,12b-Trihydroxy-5b-cholanoic acid	pos_7535	-	-
+6938	metab_6937	ETHOXYQUIN	pos_7587	C07475	HMDB0039531
+6972	metab_6971	D-erythro-Sphingosine C-17	pos_7626	-	-
+6978	metab_6977	Yucalexin P17	pos_7634	-	HMDB0036752
+6989	metab_6988	Sebacic acid	pos_7646	C08277	LMFA01170006;HMDB0000792
+6990	metab_6989	4-hydroxy Nonenal	pos_7647	-	-
+6993	metab_6992	Cyclohex-2-enone	pos_7652	C02395	-
+7005	metab_7004	N-Arachidonoyl glycine	pos_7666	-	HMDB0005096;LMFA08020003;HMDB0241918
+7107	metab_7106	Vulgarone A	pos_7782	-	HMDB0036733
+7118	metab_7117	9-OxoODE	pos_7797	C14766	LMFA02000251;LMFA02000274;HMDB0004669
+7183	metab_7182	PC(18:1(9Z)/0:0)[U]	pos_7872	-	-
+7202	metab_7201	7',8'-Dihydro-8'-hydroxyreticulataxanthin	pos_7900	-	-
+7205	metab_7204	THYMOQUINONE	pos_7903	-	HMDB0034732
+7223	metab_7222	Linoleoyl Ethanolamide	pos_7924	C13828	HMDB0012252;HMDB0013624
+7244	metab_7243	2,6-Dimethyl-4-hydroxybenzaldehyde	pos_7951	-	-
+7263	metab_7262	Acinospesigenin A	pos_7975	-	LMPR0106160001
+7272	metab_7271	LysoPC(16:1(9Z))	pos_7986	C04230	HMDB0010383
+7281	metab_7280	3-hydroxytetradecanoyl carnitine	pos_7997	-	HMDB0061640
+7295	metab_7294	Tetracosahexaenoic acid	pos_8019	-	81247-23-6;LMFA01030804;HMDB0002007
+7298	metab_7297	Zerumbone oxide	pos_8022	-	HMDB0036466
+7300	metab_7299	3-Methyl-alpha-ionyl acetate	pos_8024	-	HMDB0037631
+7309	metab_7308	(S)-(-)-Perillyl alcohol	pos_8033	C02452	HMDB0003634
+7323	metab_7322	Ganolucidic acid C	pos_8051	-	HMDB0039691
+7347	metab_7346	Persicachrome	pos_8081	-	HMDB0036425
+7365	metab_7364	(1R,12S,16Z,24E,26E,28Z,32S)-1,18-dihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0⁴,⁹]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	pos_8102	-	-
+7369	metab_7368	Boviquinone 4	pos_8106	-	HMDB0030057
+7370	metab_7369	Jasmolone	pos_8107	-	HMDB0030039
+7385	metab_7384	2-Phenylethyl octanoate	pos_8127	-	HMDB0037719
+7386	metab_7385	Chamazulene	pos_8128	C09633	HMDB0036470;LMPR0103410002
+7412	metab_7411	2,5-Dimethylbenzaldehyde	pos_8158	-	HMDB0032014
+7414	metab_7413	Janthitrem E	pos_8161	-	HMDB0030529
+7418	metab_7417	(1S)-1-hydroxy-23-oxo-24,25,26,27-tetranorcalciol	pos_8165	-	LMST03020687
+7420	metab_7419	L-Urobilinogen	pos_8168	C05789	HMDB0004157
+7425	metab_7424	2-Hydroxy-3-methoxyestrone	pos_8176	-	HMDB0011195
+7429	metab_7428	12-Ketodeoxycholic acid	pos_8185	-	HMDB0000328
+7430	metab_7429	Dehydroisoandrosterone 3-glucuronide	pos_8187	C03033	HMDB0010327;LMST05010064
+7441	metab_7440	2,2,6,7-Tetramethylbicyclo[4.3.0]nona-1(9),4-diene-7,8-diol	pos_8199	-	HMDB0036686
+7442	metab_7441	2,6-Dimethylnaphthalene	pos_8200	C14330	HMDB0059764
+7446	metab_7445	(1R,16Z,24E,26E,28Z)-1,13,18-trihydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.0⁴,⁹]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone	pos_8204	-	-
+7458	metab_7457	Dehydroepiandrosterone	pos_8220	C01227	LMST02020021;53-43-0;HMDB0000077;HMDB0005962
+7461	metab_7460	Methyleugenol	pos_8224	C10454	HMDB0031864
+7465	metab_7464	(23S,24S)-17,23-Epoxy-24,29-dihydroxy-27-norlanost-8-ene-3,15-dione	pos_8229	-	HMDB0035843
+7473	metab_7472	P-Tolualdehyde	pos_8237	C06758	HMDB0029638
+7483	metab_7482	6-(4-{2-[4,6-dihydroxy-3-(4-hydroxy-3-methylbut-2-en-1-yl)-2-methoxyphenyl]acetyl}-3-hydroxyphenoxy)-3,4,5-trihydroxyoxane-2-carboxylic acid	pos_8251	-	-
+7501	metab_7500	C17 Sphinganine	pos_8273	-	LMSP01040003
+7512	metab_7511	C16 Sphinganine	pos_8284	C13915	LMSP01040001
+7520	metab_7519	Ceanothine C	pos_8292	-	HMDB0029340
+7529	metab_7528	(1S,16R)-5,7,11,12-tetrahydroxy-8,8,10,12,16-pentamethyl-3-[1-(2-methyl-1,3-thiazol-4-yl)prop-1-en-2-yl]-17-oxa-4-azabicyclo[14.1.0]heptadec-4-en-9-one	pos_8303	-	-
+7534	metab_7533	1alpha,18-dihydroxyvitamin D3	pos_8308	-	LMST03020254
+7538	metab_7537	3-Oxo-4,6-choladienoic acid	pos_8312	-	HMDB0000476
+7543	metab_7542	12-oxo-5E,8E,10Z-dodecatrienoic acid	pos_8317	-	LMFA01060095
+7546	metab_7545	LysoPE(0:0/20:3(8Z,11Z,14Z))	pos_8323	-	HMDB0011486
+7554	metab_7553	11beta,17beta-Dihydroxy-9alpha-fluoro-17alpha-methyl-5alpha-androstan-3-one	pos_8332	C15338	-
+7566	metab_7565	HYMECROMONE METHYL ETHER	pos_8346	-	-
+7581	metab_7580	Steviobioside	pos_8361	-	HMDB0036707
+7610	metab_7609	Prostaglandin G2 2-glyceryl Ester	pos_8390	-	HMDB0062591
+7637	metab_7636	Kinetensin 1-3	pos_8422	-	HMDB0012983
+7646	metab_7645	Methyl 3-(4-methoxyphenyl)-2-oxopropanoate	pos_8432	-	-
+7671	metab_7670	Palmitoleoyl Ethanolamide	pos_8463	-	HMDB0013648
+7689	metab_7688	Oryzalide B	pos_8483	-	HMDB0037592
+7696	metab_7695	3b,16a-Dihydroxyandrostenone sulfate	pos_8491	-	LMST05020022
+7707	metab_7706	Arginyl-Gamma-glutamate	pos_8506	-	HMDB0028723
+7724	metab_7723	Icacine	pos_8526	C08690	-
+7740	metab_7739	26,26,26-trifluoro-25-hydroxyvitamin D3	pos_8544	-	LMST03020131
+7767	metab_7766	Ganglioside GD3 (d18:1/9Z-18:1)	pos_8573	C06133	HMDB0004912
+7776	metab_7775	(4R,5S,7R,11x)-11,12-Dihydroxy-1(10)-spirovetiven-2-one 12-glucoside	pos_8582	-	HMDB0030895
+7801	metab_7800	6-(2,4-dihydroxyphenyl)-2-{3-[3-(2,4-dihydroxyphenyl)propanoyl]-2,6-dihydroxyphenyl}-4-methylcyclohex-3-ene-1-carboxylic acid	pos_8612	-	-
+7806	metab_7805	S-(PGJ2)-glutathione	pos_8618	-	HMDB0013063
+7830	metab_7829	(E,E,E)-Sylvatine	pos_8647	-	HMDB0030186
+7832	metab_7831	Benzylideneacetone	pos_8649	-	HMDB0031617
+7883	metab_7882	11-Oxo-androsterone glucuronide	pos_8707	-	HMDB0010338;LMST05010032
+7928	metab_7927	(4R,6S)-p-Menth-1-ene-4,6-diol 4-glucoside	pos_8757	-	HMDB0038980
+7972	metab_7971	2-{[(3,5-dimethoxyphenyl)(hydroxy)methylidene]amino}acetic acid	pos_8804	-	-
+7981	metab_7980	2-Ethyl-5-methyl-3,3-diphenyl-1-pyrroline	pos_8813	C16660	HMDB0060672
+7994	metab_7993	Harderoporphyrinogen	pos_8832	-	HMDB0002160
+7996	metab_7995	13,14-dehydro-15-cyclohexyl Carbaprostacyclin	pos_8834	-	-
+7998	metab_7997	Hydroxynefazodone	pos_8836	-	HMDB0061040
+8021	metab_8020	5-Phenyl-1-pentanol	pos_8863	-	HMDB0031624
+8030	metab_8029	{[(2Z)-2-(phenylmethylidene)heptyl]oxy}sulfonic acid	pos_8872	-	-
+8041	metab_8040	D-Urobilin	pos_8883	C05795	-
+8082	metab_8081	Hexyl heptanoate	pos_8926	-	HMDB0032326
+8166	metab_8165	Austroinulin	pos_9015	-	HMDB0036802
+8223	metab_8222	Leukotriene B4 ethanolamide	pos_9077	-	HMDB0002304
+8226	metab_8225	Ser Ala Thr	pos_9080	-	-
+8227	metab_8226	Kynurenic acid	pos_9081	C01717	HMDB0000715;492-27-3
+8298	metab_8297	6-[(E)-2-(4-hydroxyphenyl)ethenyl]-4-methoxy-5,6-dihydro-2H-pyran-2-one	pos_9154	-	-
+8323	metab_8322	LysoPE(0:0/20:5(5Z,8Z,11Z,14Z,17Z))	pos_9179	-	HMDB0011489
+8325	metab_8324	Metaproterenol	pos_9181	C07144	HMDB0014954
+8334	metab_8333	Ile Glu Leu	pos_9190	-	-
+8350	metab_8349	Thr Val Gly Trp	pos_9208	-	-
+8387	metab_8386	Ile Pro Ile	pos_9250	-	-
+8405	metab_8404	(3b,22a)-12-Oleanene-3,22,24,29-tetrol 3-[arabinosyl-(1->3)-arabinoside]	pos_9270	-	HMDB0034818
+8416	metab_8415	8-Hydroxyclomipramine	pos_9283	-	HMDB0060802
+8437	metab_8436	Alpha-Ionol O-[arabinosyl-(1->6)-glucoside]	pos_9305	-	HMDB0038732
+8453	metab_8452	Arabinofuranobiose	pos_9322	-	HMDB0029918
+8469	metab_8468	Ile His Glu	pos_9342	-	-
+8570	metab_8569	Phe Trp	pos_9446	-	-
+8592	metab_8591	Ceanothine E	pos_9469	-	HMDB0029342
+8603	metab_8602	Ile Thr Ile	pos_9481	-	-
+8613	metab_8612	Gly Ala Gly Asp	pos_9491	-	-
+8626	metab_8625	Corchoionoside B	pos_9505	-	HMDB0030975
+8666	metab_8665	Nicotine glucuronide	pos_9550	-	152306-59-7;HMDB0001272
+8684	metab_8683	Pro Leu Ile Val	pos_9569	-	-
+8689	metab_8688	Tuberoside J	pos_9575	-	HMDB0039396
+8692	metab_8691	Octanoylglucuronide	pos_9579	-	HMDB0010347
+8726	metab_8725	Cinncassiol A 19-glucoside	pos_9616	-	HMDB0035165
+8749	metab_8748	Hoduloside I	pos_9643	-	HMDB0039075
+8752	metab_8751	(Z)-3-Octen-1-ol	pos_9646	-	HMDB0035231
+8764	metab_8763	Met Gly Cys Ile	pos_9659	-	-
+8799	metab_8798	Ile Ile Val	pos_9698	-	-
+8809	metab_8808	Glu Ser Met Trp	pos_9710	-	-
+8815	metab_8814	NNAL-N-glucuronide	pos_9716	C19606	HMDB0060498
+8861	metab_8860	Val Val Leu	pos_9765	-	-
+8889	metab_8888	Capsianoside VI	pos_9795	-	HMDB0039165
+8934	metab_8933	Trp Pro	pos_9842	-	-
+8936	metab_8935	Beta-Cortolone	pos_9845	-	LMST02030230;HMDB0013221
+8952	metab_8951	4,5-Dihydroniveusin A	pos_9862	-	HMDB0032844
+8960	metab_8959	Dioscoretine	pos_9871	-	HMDB0038588
+8962	metab_8961	11-Hydroxyandrosterone	pos_9873	C14606	HMDB0002984;LMST02020086
+9009	metab_9008	Phe Ile	pos_9925	-	-
+9038	metab_9037	Piperdial	pos_9956	C09711	HMDB0035798
+9047	metab_9046	His Ile Ile	pos_9965	-	-
+9071	metab_9070	Ethyltestosterone	pos_9990	-	HMDB0006002;LMST02030201
+9074	metab_9073	Elaterinide	pos_9993	-	HMDB0035893
+9077	metab_9076	Tyrosyl-Proline	pos_9996	-	HMDB0029113
+9162	metab_9161	Ganoderic acid C2	pos_10088	-	HMDB0035304
+9169	metab_9168	3-[3,4-dihydroxy-2-(4-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)phenyl]propanoic acid	pos_10095	-	-
+9171	metab_9170	5-Hydroxy-L-tryptophan	pos_10097	C00643	HMDB0000472;4350-09-8
+9186	metab_9185	Tarennoside	pos_10112	C11654	-
+9194	metab_9193	Thr Val Val	pos_10120	-	-
+9196	metab_9195	6-(3-{8-[5,7-dihydroxy-2-(4-hydroxyphenyl)-4-oxo-3,4-dihydro-2H-1-benzopyran-3-yl]-5,7-dihydroxy-4-oxo-3,4-dihydro-2H-1-benzopyran-2-yl}phenoxy)-3,4,5-trihydroxyoxane-2-carboxylic acid	pos_10122	-	-
+9198	metab_9197	Pseudoecgonine	pos_10124	C12449	HMDB0006348
+9209	metab_9208	Pro Met Val Pro	pos_10135	-	-
+9240	metab_9239	R1128B	pos_10170	C18841	-
+9307	metab_9306	Prolyl-Threonine	pos_10242	-	HMDB0029027
+9328	metab_9327	Ginsenoside F5	pos_10265	-	HMDB0031839
+9329	metab_9328	12S-HHT	pos_10266	C20388	HMDB0012535
+9370	metab_9369	Leu Leu	pos_10310	-	-
+9409	metab_9408	His Leu Leu	pos_10352	-	-
+9410	metab_9409	4'-Hydroxy-5,5'-diisopropyl-2,2'-dimethyl-3,4-biphenylquinone	pos_10353	-	-
+9414	metab_9413	Pro Gly Pro Thr	pos_10357	-	-
+9441	metab_9440	Ile Ser Leu Ser	pos_10388	-	-
+9473	metab_9472	Valyl-Leucine	pos_10423	-	HMDB0029131
+9478	metab_9477	Galactosylhydroxylysine	pos_10430	C05547	HMDB0246151;HMDB0000600;HMDB0242167
+9481	metab_9480	Ile Arg Val	pos_10434	-	-
+9487	metab_9486	Val Pro Val	pos_10440	-	-
+9494	metab_9493	2-Propylisonicotinic acid	pos_10447	-	-
+9499	metab_9498	Kinetensin 4-8	pos_10453	-	HMDB0012987
+9524	metab_9523	Glu Glu Ile	pos_10482	-	-
+9536	metab_9535	Canescein	pos_10495	-	HMDB0029313
+9541	metab_9540	Ser Ile Thr Phe	pos_10502	-	-
+9558	metab_9557	Glu Phe	pos_10520	-	-
+9561	metab_9560	Val Val	pos_10523	-	-
+9566	metab_9565	Thr Pro Ile	pos_10528	-	-
+9580	metab_9579	Glu Pro Ile	pos_10544	-	-
+9597	metab_9596	Nicotinuric acid	pos_10563	C05380	HMDB0003269
+9623	metab_9622	4-Pyridoxic acid	pos_10591	C00847	HMDB0000017;82-82-6
+9642	metab_9641	10-Hydroxymyristic acid methyl ester	pos_10613	-	HMDB0031061
+9661	metab_9660	2-Ethyl-5-methylthiophene	pos_10632	-	HMDB0029733
+9664	metab_9663	5'-Deoxy-5'-(methylthio)adenosine	pos_10635	C00170	-
+9675	metab_9674	5'-Deoxyadenosine	pos_10647	C05198	-
+9681	metab_9680	2-(1-hydroxy-4-oxocyclohexa-2,5-dien-1-yl)-5,6,7-trimethoxy-4H-chromen-4-one	pos_10654	-	-
+9683	metab_9682	3-Hydroxyisovalerylcarnitine	pos_10657	-	HMDB0061189;LMFA07070041
+9699	metab_9698	Alliospiroside D	pos_10673	-	HMDB0030915
+9705	metab_9704	Dihydrozeatin-9-N-glucoside-O-glucoside	pos_10679	-	HMDB0012212
+9708	metab_9707	Gly Val Val	pos_10682	-	-
+9752	metab_9751	Arg Val Leu	pos_10731	-	-
+9760	metab_9759	Leu Val	pos_10739	-	-
+9767	metab_9766	Gln Asn Ile	pos_10747	-	-
+9788	metab_9787	Madlongiside C	pos_10771	-	HMDB0037904
+9795	metab_9794	Glu Leu	pos_10779	-	-
+9809	metab_9808	Gly Leu	pos_10797	-	-
+9826	metab_9825	N2-(D-1-Carboxyethyl)-L-lysine	pos_10818	C04020	-
+9828	metab_9827	4-Hydroxybenzaldehyde	pos_10820	C00633	HMDB0011718;MJDBOTE0000554
+9832	metab_9831	Gln Ile	pos_10824	-	-
+9850	metab_9849	Phenylacetaldehyde	pos_10844	C00601	HMDB0041610;HMDB0006236
+9868	metab_9867	Benzaldehyde	pos_10863	C00261	HMDB0006115
+9875	metab_9874	Mevalonolactone	pos_10870	-	HMDB0244840;HMDB0006024
+9879	metab_9878	Val Glu Ala	pos_10875	-	-
+9881	metab_9880	Thymine	pos_10877	C00178	HMDB0000262;65-71-4
+9931	metab_9930	3,11,12-Trihydroxy-1(10)-spirovetiven-2-one	pos_10933	-	HMDB0038154
+9944	metab_9943	Val Pro	pos_10946	-	-
+9979	metab_9978	4''-Methyl-6''-(3,4-dihydroxy-E-cinnamoyl)isoorientin	pos_10986	-	-
+10019	metab_10018	KAPA	pos_11031	C01092	HMDB0240687
+10060	metab_10059	Val Pro Gln	pos_11077	-	-
+10063	metab_10062	Ile Gly Lys	pos_11080	-	-
+10064	metab_10063	Glu Val Ala	pos_11081	-	-
+10078	metab_10077	3'-Hydroxy-T2 Toxin	pos_11095	-	-
+10093	metab_10092	Leu Ser Gln	pos_11112	-	-
+10105	metab_10104	3-Hydroxyanthranilic acid	pos_11124	C00632	548-93-6;HMDB0001476
+10106	metab_10105	(7R*,8R*)-3-Methoxy-3',4,7,9,9'-pentahydroxy-8,4'-oxyneolignan 4-xyloside	pos_11126	-	-
+10120	metab_10119	Uracil	pos_11141	C00106	66-22-8;HMDB0000300
+10122	metab_10121	Tyr Glu	pos_11144	-	-
+10124	metab_10123	Deoxyuridine	pos_11147	C00526	HMDB0000012;HMDB0245528;951-78-0
+10158	metab_10157	Octopamine (p-Hydroxyphenylethanolamine)	pos_11186	-	-
+10165	metab_10164	Dityrosine	pos_11193	-	HMDB0006045;HMDB0254132;HMDB0029117
+10205	metab_10204	Biopterin	pos_11235	C06313	HMDB0000633;HMDB0000468;HMDB0000817
+10218	metab_10217	Val Arg Gly	pos_11249	-	-
+10230	metab_10229	L-gamma-glutamyl-L-isoleucine	pos_11263	-	HMDB0011170
+10250	metab_10249	Methyl helianthenoate A glucoside	pos_11287	-	HMDB0040899
+10268	metab_10267	Arg Ala Val	pos_11308	-	-
+10276	metab_10275	Gly Met	pos_11316	-	-
+10281	metab_10280	L-Alloisoleucine	pos_11322	-	HMDB0000557
+10298	metab_10297	Lysyl-Threonine	pos_11341	-	HMDB0028961
+10311	metab_10310	Asp Val	pos_11355	-	-
+10316	metab_10315	Gly Val	pos_11360	-	-
+10345	metab_10344	Ala Val	pos_11390	-	-
+10346	metab_10345	Asn Val	pos_11391	-	-
+10349	metab_10348	Gly Ile Lys	pos_11394	-	-
+10373	metab_10372	Mycosporine	pos_11421	C10607	-
+10375	metab_10374	His Ser Met	pos_11423	-	-
+10378	metab_10377	Glutamylisoleucine	pos_11426	-	HMDB0028822
+10380	metab_10379	4-Guanidinobutanoic acid	pos_11428	C01035	HMDB0003464;HMDB0031842
+10394	metab_10393	His Leu	pos_11442	-	-
+10402	metab_10401	Asp Lys	pos_11452	-	-
+10424	metab_10423	Ser Tyr Lys	pos_11475	-	-
+10448	metab_10447	2-hydroxy-2-(4-hydroxyphenyl)ethyl (2Z)-2-hydroxy-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoate	pos_11502	-	-
+10451	metab_10450	Deoxycytidine	pos_11506	C00881	951-77-9;HMDB0000014;HMDB0250725
+10456	metab_10455	Cytosine	pos_11512	C00380	HMDB0000630
+10497	metab_10496	N-(4-aminobutyl)-3-(4-hydroxy-3-methoxyphenyl)propanimidic acid	pos_11560	-	-
+10511	metab_10510	Hydroxyprolyl-Hydroxyproline	pos_11577	-	HMDB0028864
+10512	metab_10511	Aspartyl-Proline	pos_11579	-	HMDB0028761;HMDB0002335
+10550	metab_10549	N-Alpha-acetyllysine	pos_11624	C12989	HMDB0000446
+10570	metab_10569	2-Ethylacrylic acid	pos_11646	-	HMDB0001862
+10586	metab_10585	Alanylclavam	pos_11669	C17360	-
+10612	metab_10611	Hydroxyprolyl-Leucine	pos_11703	-	HMDB0028867
+10639	metab_10638	Thr Thr	pos_11738	-	-
+10656	metab_10655	L-alpha-Aspartyl-L-hydroxyproline	pos_11760	-	HMDB0011160
+10705	metab_10704	2-Amino-2-methylbutanoate	pos_11816	C03571	-
+10709	metab_10708	3-Buten-1-amine	pos_11820	C12244	-
+10713	metab_10712	Thr Arg	pos_11824	-	-
+10726	metab_10725	Gly Glu His	pos_11844	-	-
+10728	metab_10727	Gly Arg	pos_11847	-	-
+10864	metab_10863	1-Methylhistamine	pos_12016	C05127	501-75-7;HMDB0000898
+10885	metab_10884	Histamine	pos_12039	C00388	HMDB0000870;51-45-6
+10904	metab_10903	D-Pipecolic acid	pos_12059	-	HMDB0005960
+10931	metab_10930	Poly-g-D-glutamate	pos_12088	C05723	HMDB0004135
+10985	metab_10984	Pro Arg	pos_12156	-	-
+11023	metab_11022	Lucidenic acid N	pos_12198	-	HMDB0038352
+11039	metab_11038	Sucrose	pos_12216	C00089	57-50-1;HMDB0000258
+11048	metab_11047	Diacetone alcohol	pos_12225	-	HMDB0031511
+11065	metab_11064	Glutamate, gamma-methyl ester	pos_12245	-	-
+11076	metab_11075	L-Pyridosine	pos_12259	-	HMDB0029443
+11082	metab_11081	Formimino-L-glutamic acid	pos_12266	C00439	HMDB0000854
+11083	metab_11082	Acetylcholine	pos_12267	C01996	HMDB0000895
+11103	metab_11102	Creatine	pos_12293	C00300	HMDB0000064;57-00-1
+11106	metab_11105	Dimethylglycine	pos_12297	C01026	1118-68-9;HMDB0000092
+11116	metab_11115	Ε-(gamma-Glutamyl)-lysine	pos_12309	-	-
+11166	metab_11165	Ser Thr	pos_12374	-	-
+11188	metab_11187	Beta-D-Glucosamine	pos_12402	C08349	HMDB0030091
+11189	metab_11188	L-Carnitine	pos_12403	C00318	HMDB0000062;541-15-1
+11207	metab_11206	Glutaminylserine	pos_12423	-	HMDB0028806
+11225	metab_11224	Gln Arg	pos_12442	-	-
+11230	metab_11229	Asn Ser Gly	pos_12447	-	-
+11236	metab_11235	L-Glutamine	pos_12456	C00064	HMDB0000641;HMDB0003423;56-85-9
+11246	metab_11245	Thr Ala Gln	pos_12466	-	-
+11263	metab_11262	3-(Pyrazol-1-yl)-L-alanine	pos_12487	C01162	-
+11264	metab_11263	L-Asparagine	pos_12488	C00152	70-47-3;HMDB0251512;HMDB0000168;MJDBOTE0000518
+11266	metab_11265	L-Serine	pos_12490	C00065	HMDB0000187;56-45-1
+11315	metab_11314	N1-Acetylspermidine	pos_12551	C00612	HMDB0001276
+11480	metab_11479	Gly Lys	pos_12749	-	-
+11492	metab_11491	Ser Ser Ser Lys	pos_12764	-	-
+11599	metab_11598	Levoglucosan	pos_12889	-	HMDB0000640
+11606	metab_11605	(+)-Camphor	pos_2925	C00808	LMPR0102120001;HMDB0059838
+11607	metab_11606	2-Hydroxycinnamic acid	pos_491	C01772;C05838	HMDB0041592;HMDB0002641
+11608	metab_11607	6-Hydroxykynurenic acid	pos_10410	C05663	HMDB0033528
+11609	metab_11608	Chondroitin	pos_9844	C00401	HMDB0000629;HMDB0000632;9007-27-6
+11610	metab_11609	Dermatan L-iduronate	pos_4853	C01490	HMDB0000632;HMDB0060470
+11611	metab_11610	Estrone	pos_5328	C02538	HMDB0000145;HMDB0001425;53-16-7;LMST02010004
+11612	metab_11611	Indole	pos_10542	C00463	HMDB0035924;HMDB0000738
+11613	metab_11612	Indole-3-carboxaldehyde	pos_9828	C08493	HMDB0000195;HMDB0029737;HMDB0000197
+11614	metab_11613	Inulobiose	pos_1086	C01711	HMDB0029898
+11615	metab_11614	Isonicotinic acid	pos_3328	C07446	HMDB0060665;HMDB0041912
+11616	metab_11615	L-Cystine	pos_12477	C00491	HMDB0000192;HMDB0250712
+11617	metab_11616	Levan	pos_11017	C06215	HMDB0003539
+11618	metab_11617	Maltotriose	pos_496	C01835	HMDB0038852;HMDB0001262
+11619	metab_11618	N-Acetyl-D-glucosamine	pos_248	C00140	7512-17-6;HMDB0062641;HMDB0000254;HMDB0244808;HMDB0000803;HMDB0000148;HMDB0000215;HMDB0014291
+11620	metab_11619	N-Acetylneuraminic acid	pos_12273	C00270	HMDB0246275;131-48-6;HMDB0000773;HMDB0000230
+11621	metab_11620	P-Coumaric Acid	pos_2908	C02646	HMDB0003654;HMDB0002035;HMDB0030677;MJDBOTE0000719
+11634	metab_11633	Deoxycholic acid	neg_13	C04483	83-44-3;LMST04010040;HMDB0000626
+11662	metab_11661	N-(Carbomethoxyacetyl)-4-S-chlorotryptophan	neg_42	-	HMDB0030398
+11703	metab_11702	Riboflavin (Vitamin B2)	neg_83	-	-
+11730	metab_11729	(-)-Stercobilin	neg_111	-	HMDB0240259
+11732	metab_11731	Mesobilirubinogen	neg_113	C05790	HMDB0001898
+11767	metab_11766	13-Hydroxy-9-methoxy-10-oxo-11-octadecenoic acid	neg_148	-	HMDB0040901
+11779	metab_11778	7a,12a-Dihydroxy-cholestene-3-one	neg_160	C05457	HMDB0002197
+11808	metab_11807	Uridine	neg_190	C00299	58-96-8;HMDB0000296
+12026	metab_12025	2-Hydroxyethanesulfonate	neg_414	C05123	HMDB0003903
+12055	metab_12054	Ala Thr Asp Glu	neg_444	-	-
+12073	metab_12072	Demethoxyegonol	neg_463	-	HMDB0030772
+12118	metab_12117	1-(beta-D-Ribofuranosyl)-1,4-dihydronicotinamide	neg_508	C15497	HMDB0011643;HMDB0011648
+12121	metab_12120	Deoxyinosine	neg_511	C05512	890-38-0;HMDB0000071
+12146	metab_12145	Tyrosyl-Aspartate	neg_536	-	HMDB0029101
+12150	metab_12149	Indoleacetyl glutamine	neg_540	-	HMDB0013240
+12181	metab_12180	Cortolone-3-glucuronide	neg_571	-	HMDB0010320
+12234	metab_12233	Allantoin	neg_624	C01551	HMDB0000462;MJDBOTE0001088
+12237	metab_12236	Indoxylsulfuric acid	neg_627	-	HMDB0000682
+12262	metab_12261	VPGPR Enterostatin	neg_653	-	HMDB0003577
+12266	metab_12265	Threoninyl-Glutamine	neg_657	-	HMDB0029059
+12282	metab_12281	Mabioside E	neg_673	-	HMDB0040654
+12379	metab_12378	3-Hydroxysebacic acid	neg_771	-	HMDB0000350
+12401	metab_12400	Suberic acid	neg_793	C08278	HMDB0000893;LMFA01170001
+12427	metab_12426	Gly Leu Phe	neg_819	-	-
+12433	metab_12432	PIP2(16:0/18:0)	neg_825	C00626	HMDB0010035
+12487	metab_12486	Nepetaside	neg_879	-	HMDB0038149
+12584	metab_12583	4,5-Dihydrovomifoliol	neg_977	-	HMDB0040615
+12606	metab_12605	Physagulin F	neg_1000	-	HMDB0039631
+12613	metab_12612	2-Carboxy-4-dodecanolide	neg_1007	-	HMDB0030987
+12635	metab_12634	Prostaglandin I2	neg_1030	C01312	HMDB0001335;LMFA03010087;35121-78-9
+12641	metab_12640	Porrigenin A	neg_1036	-	HMDB0032783;LMST01080001
+12785	metab_12784	Menthone 1,3-glyceryl ketal	neg_1184	-	HMDB0040004
+12795	metab_12794	7-Ketodeoxycholic acid	neg_1194	-	HMDB0000391
+12814	metab_12813	Austalide I	neg_1215	-	HMDB0030155
+12817	metab_12816	7a,12a-Dihydroxy-3-oxo-4-cholenoic acid	neg_1218	C15568	HMDB0000447
+12840	metab_12839	Taurochenodeoxycholate-7-sulfate	neg_1242	-	HMDB0002498;LMST05020030
+12924	metab_12923	3-hydroxypentadecanoyl carnitine	neg_1327	-	HMDB0061641
+13235	metab_13234	L-Arginine	neg_1646	C00062	HMDB0062762;HMDB0000517;HMDB0303361;74-79-3
+13278	metab_13277	Moringyne	neg_1690	-	HMDB0031724
+13284	metab_13283	Taurine	neg_1696	C00245	107-35-7;HMDB0000251
+13522	metab_13521	Adenine	neg_1946	C00147	73-24-5;HMDB0000034
+13667	metab_13666	L-2-Aminoadipic acid	neg_2103	C00956	HMDB0000510;HMDB0302754
+13696	metab_13695	3-Galactosyllactose	neg_2134	-	HMDB0006599
+13705	metab_13704	Stachyose	neg_2143	C01613	HMDB0003553;470-55-3
+13710	metab_13709	Arginyl-Valine	neg_2148	-	HMDB0028722
+13786	metab_13785	D[-Arg-2]KYOTORPHAN	neg_2230	-	-
+13789	metab_13788	Acuminoside	neg_2233	-	HMDB0029347
+13852	metab_13851	Xanthine	neg_2297	C00385	69-89-6;HMDB0000292;MJDBOTE0000403
+13869	metab_13868	(E)-Casimiroedine	neg_2315	C10577	HMDB0030274
+13891	metab_13890	Dihydrozeatin-O-glucoside	neg_2339	C16448	HMDB0012214
+13910	metab_13909	Methyl (3x,10R)-dihydroxy-11-dodecene-6,8-diynoate 10-glucoside	neg_2358	-	HMDB0040896
+13920	metab_13919	Kyotorphin	neg_2368	C02993	HMDB0005768;HMDB0029099
+13925	metab_13924	Leucyl-Arginine	neg_2373	-	HMDB0028923
+13930	metab_13929	1-Methyladenosine	neg_2378	C02494	HMDB0003331;HMDB0243935
+13934	metab_13933	2-(3-Carboxy-3-aminopropyl)-L-histidine	neg_2383	C04441	HMDB0011655
+13944	metab_13943	12-Hydroxy-13-O-D-glucuronoside-octadec-9Z-enoate	neg_2394	-	HMDB0060118
+13947	metab_13946	(2S,2'S)-Pyrosaccharopine	neg_2397	-	-
+14000	metab_13999	1,2,3,4,5,6-Hexahydro-5-(1-hydroxyethylidene)-7H-cyclopenta[b]pyridin-7-one	neg_2453	-	HMDB0039655
+14012	metab_14011	5-hydroxy-8-(2-hydroxypropan-2-yl)-4-propyl-2H,8H,9H-furo[2,3-h]chromen-2-one	neg_2465	-	-
+14031	metab_14030	Phenylglucuronide	neg_2484	-	HMDB0059806
+14039	metab_14038	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid	neg_2492	-	HMDB0000425
+14074	metab_14073	Threoninyl-Hydroxyproline	neg_2528	-	HMDB0029062
+14091	metab_14090	Gamma-Glutamylphenylalanine	neg_2545	-	HMDB0000594
+14094	metab_14093	7,8-Dihydrovomifoliol 9-[apiosyl-(1->6)-glucoside]	neg_2548	-	HMDB0029771
+14102	metab_14101	Lysyl-Hydroxyproline	neg_2556	-	HMDB0028952
+14103	metab_14102	2',4',6'-Trihydroxydihydrochalcone 2'-glucoside	neg_2557	-	-
+14105	metab_14104	L-Tyrosine	neg_2559	C00082	HMDB0000158;60-18-4
+14108	metab_14107	{3-[(1E)-5-oxo-7-phenylhepta-1,3-dien-1-yl]phenyl}oxidanesulfonic acid	neg_2562	-	-
+14110	metab_14109	10,11-dihydro-20-dihydroxy-LTB4	neg_2564	-	LMFA03020043;HMDB0012502
+14118	metab_14117	Alanyl-Hydroxyproline	neg_2572	-	-
+14130	metab_14129	Gamma-Glutamyltyrosine	neg_2585	-	HMDB0011741
+14138	metab_14137	Glutaric acid	neg_2593	C00489	HMDB0000661
+14209	metab_14208	Capsianoside V	neg_2665	-	HMDB0030737
+14242	metab_14241	Isoleucyl-Valine	neg_2699	-	HMDB0028920
+14248	metab_14247	Gingerglycolipid B	neg_2705	-	HMDB0041094
+14266	metab_14265	3b,6a-Dihydroxy-alpha-ionol 9-[apiosyl-(1->6)-glucoside]	neg_2723	-	HMDB0041577
+14278	metab_14277	LysoPE(0:0/14:0)	neg_2735	-	HMDB0011470
+14283	metab_14282	Repaglinide aromatic amine	neg_2740	-	HMDB0061005
+14298	metab_14297	5-Methoxynoracronycine	neg_2755	-	HMDB0029332
+14300	metab_14299	Nonate	neg_2757	-	HMDB0011717
+14326	metab_14325	7,8-Dehydroastaxanthianthin	neg_2784	-	HMDB0036872
+14329	metab_14328	6-{4-[3-(3,7-dimethylocta-2,6-dien-1-yl)-5,7-dihydroxy-6-(3-methylbut-2-en-1-yl)-4-oxo-3,4-dihydro-2H-1-benzopyran-2-yl]-3-hydroxyphenoxy}-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_2787	-	-
+14332	metab_14331	Val Thr Ile Asp	neg_2790	-	-
+14365	metab_14364	Xanthurenic acid	neg_2823	C02470	59-00-7;HMDB0000881
+14373	metab_14372	Tyrosyl-Gamma-glutamate	neg_2831	-	HMDB0029119
+14383	metab_14382	Leukotriene D4	neg_2842	C05951	HMDB0003080;73836-78-9;HMDB0244369;LMFA03020006
+14393	metab_14392	Gamma-Glutamylisoleucine	neg_2852	-	HMDB0011170
+14396	metab_14395	11-[(2R,3S)-3-[2-amino-3-methyl-4-(2-methyl-1,3-thiazol-4-yl)but-3-en-1-yl]-2-methyloxiran-2-yl]-3,7-dihydroxy-4,4,6,8-tetramethyl-5-oxoundecanoic acid	neg_2855	-	-
+14418	metab_14417	Tryptophyl-Gamma-glutamate	neg_2880	-	HMDB0029097
+14423	metab_14422	Physagulin B	neg_2885	-	HMDB0041048
+14463	metab_14462	Ixocarpalactone A	neg_2927	-	HMDB0034393;LMST01160011
+14506	metab_14505	(+/-)-3',4'-Methylenedioxy-5,7-dimethylepicatechin	neg_2974	-	-
+14551	metab_14550	Leukotriene D5	neg_3020	-	HMDB0012994;LMFA03020073
+14556	metab_14555	LysoPE(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/0:0)	neg_3025	-	HMDB0011526
+14574	metab_14573	Trandolaprilat	neg_3047	C21515	HMDB0247506;HMDB0060583
+14575	metab_14574	6-{[10-butanoyl-3-hydroxy-6-(2-hydroxypropyl)-2,2-dimethyl-8-oxo-2H,3H,4H,8H-pyrano[3,2-g]chromen-5-yl]oxy}-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_3048	-	-
+14605	metab_14604	Tyrosyl-Isoleucine	neg_3084	-	HMDB0029108
+14649	metab_14648	Valyl-Hydroxyproline	neg_3130	-	HMDB0029128
+14663	metab_14662	Strigol	neg_3145	C09190	HMDB0036677
+14694	metab_14693	24,25-Diacetylvulgaroside	neg_3181	-	HMDB0041366
+14719	metab_14718	P-Anisic acid	neg_3207	C02519	HMDB0001101
+14745	metab_14744	6-methoxy-3-(4-methoxyphenyl)-3,4-dihydro-2H-1-benzopyran-7-ol	neg_3235	-	-
+14782	metab_14781	Glucosylgalactosyl hydroxylysine	neg_3273	-	HMDB0000585
+14795	metab_14794	16b-Hydroxyestrone	neg_3290	C05300	HMDB0000313;LMST02010046
+14810	metab_14809	3-Methyl-3-butenyl apiosyl-(1->6)-glucoside	neg_3306	-	HMDB0031954
+14841	metab_14840	Glycosides	neg_3340	C01443	HMDB0031448
+14844	metab_14843	(14alpha,17beta,20S,22R)-14,20-Epoxy-17-hydroxy-1-oxowitha-3,5,24-trienolide	neg_3343	-	HMDB0032685
+14850	metab_14849	4-Amino-2-methylenebutanoic acid	neg_3349	-	HMDB0030409
+14867	metab_14866	Bakers yeast extract	neg_3369	-	HMDB0032173
+14869	metab_14868	Blumealactone C	neg_3372	-	HMDB0035357
+14875	metab_14874	1-(9Z-hexadecenoyl)-glycero-3-phosphate	neg_3378	-	LMGP10050016;HMDB0062323
+14900	metab_14899	N'-Formylkynurenine	neg_3405	C02406	1022-31-7
+14902	metab_14901	3-O-Methylniveusin A	neg_3407	-	HMDB0039084
+14914	metab_14913	Glycochenodeoxycholic acid 3-glucuronide	neg_3419	C03033	HMDB0002579;LMST05010048
+14928	metab_14927	3-Hydroxy-5Z-octenyl acetate	neg_3434	-	HMDB0030369
+14946	metab_14945	(3b,4b,5b)-4,5-Epoxy-p-menth-1-en-3-ol 3-glucoside	neg_3453	-	HMDB0038979
+14958	metab_14957	(3b,20R,22R)-3,20,27-Trihydroxy-1-oxowitha-5,24-dienolide 3-glucoside	neg_3465	-	HMDB0033573
+14982	metab_14981	PG(18:0/22:5(4Z,7Z,10Z,13Z,16Z))	neg_3492	C00344	HMDB0010612
+14993	metab_14992	DL-Ornithino-L-alanine	neg_3503	-	HMDB0029448
+15023	metab_15022	LysoPE(0:0/24:6(6Z,9Z,12Z,15Z,18Z,21Z))	neg_3535	-	HMDB0011499
+15072	metab_15071	(-)-Fumigaclavine B	neg_3589	-	HMDB0030201
+15074	metab_15073	2-Indolecarboxylic acid	neg_3591	-	HMDB0002285
+15106	metab_15105	Epijasminoside A	neg_3623	-	HMDB0033111
+15108	metab_15107	Janthitrem F	neg_3625	-	HMDB0030530
+15135	metab_15134	19(R)-hydroxy-PGA2	neg_3654	-	-
+15171	metab_15170	Nanaomycin	neg_3693	-	-
+15186	metab_15185	Canarigenin 3-[glucosyl-(1->4)-6-deoxy-alloside]	neg_3709	-	HMDB0035433
+15190	metab_15189	Sterebin D	neg_3713	-	HMDB0036832
+15200	metab_15199	Corchorusoside B	neg_3723	-	HMDB0032821
+15224	metab_15223	Erythroskyrin	neg_3749	-	HMDB0030464
+15241	metab_15240	(1beta,2beta,5beta)-p-Menth-3-ene-1,2,5-triol	neg_3766	-	HMDB0038978
+15252	metab_15251	Ganoderic acid Mk	neg_3778	-	HMDB0035294
+15273	metab_15272	2-Hydroxydecanedioic acid	neg_3799	-	HMDB0000424
+15277	metab_15276	9-Oxo-nonanoic acid	neg_3803	C16322	LMFA01060160;HMDB0094711
+15291	metab_15290	12-oxo-20-dihydroxy-leukotriene B4	neg_3818	-	LMFA03020048;HMDB0012551
+15324	metab_15323	Desglucocheirotoxin	neg_3853	-	HMDB0034362
+15329	metab_15328	Enterodiol	neg_3858	C18166	HMDB0005056
+15342	metab_15341	9alpha-(3-Methylbutanoyloxy)-4S-hydroxy-10(14)-oplopen-3-one	neg_3872	-	HMDB0039171
+15344	metab_15343	Pisumionoside	neg_3875	-	HMDB0039947
+15358	metab_15357	N-[(3a,5b,7a,12a)-3,12-dihydroxy-24-oxo-7-(sulfooxy)cholan-24-yl]-Glycine	neg_3889	-	HMDB0002640
+15363	metab_15362	(ent-2alpha,3beta,15beta,16beta)-15,16-Epoxy-2,3-kauranediol	neg_3895	-	HMDB0038688
+15385	metab_15384	Dimethyltryptamine	neg_3917	C08302	HMDB0005973
+15433	metab_15432	(+/-)-Naringenin	neg_3967	-	-
+15448	metab_15447	4-Oxo-9-cis-retinoyl-beta-glucuronide	neg_3984	-	HMDB0060122
+15491	metab_15490	(S)-9-Hydroxy-10-undecenoic acid	neg_4031	-	LMFA01050436;HMDB0032662
+15505	metab_15504	Asparagoside A	neg_4047	C08886	HMDB0030046
+15513	metab_15512	6-{[2-(2,4-dihydroxyphenyl)-7-hydroxy-3-(8-hydroxy-3,7-dimethylocta-2,6-dien-1-yl)-6-(3-methylbut-2-en-1-yl)-4-oxo-4H-chromen-5-yl]oxy}-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_4056	-	-
+15527	metab_15526	(8alpha,10beta,11beta)-3-Hydroxy-4,15-dinor-1(5)-xanthen-12,8-olide	neg_4070	-	HMDB0037244
+15550	metab_15549	Absindiol	neg_4094	-	HMDB0033229
+15567	metab_15566	1-Cyclopropyl-4-methyl-1,3-cyclohexanediol	neg_4112	-	HMDB0036992
+15574	metab_15573	Lucidenic acid E2	neg_4119	-	HMDB0036434
+15604	metab_15603	MG(20:4(5Z,8Z,11Z,14Z)/0:0/0:0)	neg_4156	-	HMDB0011578
+15619	metab_15618	6-(4-{3-[2,4-dihydroxy-5-(3-methylbut-2-en-1-yl)phenyl]-2-hydroxy-3-oxopropyl}-2-(3-methylbut-2-en-1-yl)phenoxy)-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_4176	-	-
+15620	metab_15619	(4beta,5beta,6beta,14beta,15alpha,20S,22R)-5,6-Epoxy-4,14,15-trihydroxy-1-oxowitha-2,24-dienolide	neg_4177	-	HMDB0033199
+15631	metab_15630	7-Sulfocholic acid	neg_4194	-	LMST05020039;HMDB0002421
+15648	metab_15647	2-Arachidonylglycerol	neg_4215	C13856	HMDB0013657;HMDB0004666
+15665	metab_15664	2,3-dinor Prostaglandin E1	neg_4238	-	-
+15667	metab_15666	Abscisic alcohol	neg_4243	C13456	HMDB0039635
+15685	metab_15684	3,4-Dimethyl-5-pentyl-2-furanheptanoic acid	neg_4265	-	HMDB0039603
+15689	metab_15688	(3beta,17alpha,23S,24S)-17,23-Epoxy-3,24,29-trihydroxy-27-norlanost-8-en-15-one	neg_4269	-	HMDB0035144
+15696	metab_15695	Trans-EKODE-(E)-Ib	neg_4277	-	-
+15698	metab_15697	3a,4b,12a-Trihydroxy-5b-cholanoic acid	neg_4279	-	HMDB0000330
+15715	metab_15714	4-cholesten-7alpha,12alpha,24-triol-3-one	neg_4302	-	HMDB0062399;LMST04030171
+15725	metab_15724	27-Norcholestanehexol	neg_4312	-	LMST04020029;HMDB0002157
+15731	metab_15730	PE(14:0/0:0)	neg_4319	-	LMGP02050003
+15763	metab_15762	Polyporusterone E	neg_4359	-	HMDB0038498
+15767	metab_15766	3alpha,7alpha-Dihydroxycoprostanic acid	neg_4366	-	17974-66-2;HMDB0000359
+15775	metab_15774	PE(18:1(9Z)/0:0)	neg_4378	-	LMGP02050004
+15795	metab_15794	Trihydroxycoprostanoic acid	neg_4403	-	LMST01010246;HMDB0000601;HMDB0002163
+15797	metab_15796	LysoPC(18:1(9Z))	neg_4406	-	HMDB0002815;HMDB0061701
+15804	metab_15803	Cis-Solamin	neg_4414	-	HMDB0032732
+15899	metab_15898	Cynaratriol	neg_4541	-	HMDB0034983
+16053	metab_16052	25-Acetylvulgaroside	neg_4755	-	HMDB0041365
+16182	metab_16181	Ganolucidic acid E	neg_4915	-	HMDB0037607
+16193	metab_16192	3-p-Coumaroyl-1,5-quinolactone	neg_4926	-	HMDB0029292
+16278	metab_16277	2-Dodecylbenzenesulfonic acid	neg_5015	-	HMDB0031031
+16289	metab_16288	Ganosporelactone B	neg_5026	-	HMDB0036403
+16317	metab_16316	Cinncassiol C1 19-glucoside	neg_5054	-	HMDB0035167
+16691	metab_16690	Aldosterone 18-glucuronide	neg_5443	C03033	HMDB0010345;LMST05010062
+16738	metab_16737	Taurocholic acid 3-sulfate	neg_5491	-	LMST05020031;HMDB0002581
+16870	metab_16869	Physapubescin	neg_5632	-	HMDB0033796
+16990	metab_16989	Gymnodimine	neg_5766	C20025	HMDB0041430
+17145	metab_17144	Fevicordin B 2-[rhamnosyl-(1->4)-glucosyl-(1->6)-glucoside]	neg_5949	-	HMDB0035498
+17233	metab_17232	2-hydroxyhexadecanoic acid	neg_6082	-	HMDB0031057
+17262	metab_17261	Bovinic acid	neg_6122	C04056	HMDB0003797
+17373	metab_17372	Reticulatamol	neg_6269	-	HMDB0041023
+17442	metab_17441	TetraHCA	neg_6355	-	HMDB0062534
+17478	metab_17477	10,11-dihydro-20-trihydroxy-leukotriene B4	neg_6401	-	LMFA03020044;HMDB0012503
+17501	metab_17500	Tridecanoylglycine	neg_6432	-	HMDB0013317
+17502	metab_17501	LysoPC(16:0)	neg_6433	C04230	HMDB0010382;HMDB0240262;14863-27-5
+17542	metab_17541	25-Hydroxyvitamin D3-26,23-lactol	neg_6484	-	HMDB0060127
+17553	metab_17552	Lepidiumterpenyl ester	neg_6498	-	HMDB0036865
+17557	metab_17556	PE(15:0/0:0)	neg_6505	-	LMGP02050031
+17586	metab_17585	Lubiminol	neg_6540	-	HMDB0029604
+17591	metab_17590	Homodolichosterone	neg_6546	-	HMDB0034079
+17603	metab_17602	Coprocholic acid	neg_6559	-	HMDB0000601
+17610	metab_17609	Prostaglandin F2a	neg_6566	C00639	551-11-1;HMDB0001139;HMDB0246949
+17638	metab_17637	Corchorifatty acid D	neg_6599	-	HMDB0033243
+17657	metab_17656	Trans-2-trans-4-Heptadien-1-ol	neg_6623	-	HMDB0032301;LMFA05000701
+17678	metab_17677	Bufalin	neg_6653	C16922	LMST01130001;HMDB0249428
+17707	metab_17706	1b,3a,7b-Trihydroxy-5b-cholanoic acid	neg_6687	-	HMDB0013158
+17711	metab_17710	[(1R,16Z,24E,26E,28Z)-1-hydroxy-12-[1-(4-hydroxy-3-methoxycyclohexyl)propan-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-2,3,10,14,20-pentaoxo-11,36-dioxa-4-azatricyclo[30.3.1.0⁴,⁹]hexatriaconta-16,24,26,28-tetraen-18-yl]oxidanesulfonic acid	neg_6691	-	-
+17727	metab_17726	Petasitenine	neg_6713	C10359	HMDB0030328
+17731	metab_17730	Monomenthyl succinate	neg_6717	-	HMDB0036143
+17756	metab_17755	Varanic acid	neg_6747	-	LMST04030067;HMDB0002195
+17760	metab_17759	24,25,26,27-Tetranor-23-oxo-hydroxyvitamin D3	neg_6751	-	HMDB0060114
+17768	metab_17767	4,7-Megastigmadien-9-ol	neg_6759	-	HMDB0038731
+17797	metab_17796	(1R*,3R*,3'S*)-1,2,3,4-Tetrahydro-1-(2-thio-3-pyrrolidinyl)-beta-carboline-3-carboxylic acid	neg_6796	-	-
+17819	metab_17818	Lithocholate 3-O-glucuronide	neg_6820	C03033	HMDB0254126;LMST05010066;HMDB0002513
+17833	metab_17832	6-Epi-7-isocucurbic acid glucoside	neg_6837	-	HMDB0029782
+17856	metab_17855	3b-Hydroxy-6b-methoxy-7(11)-eremophilen-12,8a-olide	neg_6862	-	HMDB0040755
+17861	metab_17860	Polyethylene, oxidized	neg_6867	-	HMDB0032472
+17878	metab_17877	Avenestergenin A2	neg_6885	-	HMDB0035262
+17879	metab_17878	N-[(3a,5b,7b)-7-hydroxy-24-oxo-3-(sulfooxy)cholan-24-yl]-Glycine	neg_6886	-	HMDB0002409
+17909	metab_17908	Arginyl-Arginine	neg_6917	-	HMDB0028703
+17910	metab_17909	1-(4-methoxyphenyl)-4-methylpent-1-en-3-ol	neg_6919	-	-
+17934	metab_17933	11-Hydroxy-12-methoxydihydrokawain	neg_6943	-	HMDB0030766
+17943	metab_17942	Taurocholic acid	neg_6953	C05122	HMDB0000036;81-24-3;LMST05040001
+17945	metab_17944	Deoxycholic acid 3-glucuronide	neg_6955	C03033	HMDB0002596;LMST05010046
+17948	metab_17947	2,2'-(3-methylcyclohexane-1,1-diyl)diacetic acid	neg_6959	-	-
+17950	metab_17949	6-hydroxy-6-(hydroxymethyl)-1,1,4a-trimethyl-5-{[(2-oxo-2H-chromen-7-yl)oxy]methyl}-decahydronaphthalen-2-yl acetate	neg_6961	-	-
+17993	metab_17992	Spirolide C	neg_7009	-	HMDB0038344
+18010	metab_18009	2-Nonenal	neg_7027	-	HMDB0255708;LMFA06000041;HMDB0031269
+18030	metab_18029	(1R,2R,4R)-1,8-Epoxy-p-menthane-2,4-diol	neg_7048	-	HMDB0041545
+18049	metab_18048	5'-O-Methylmelledonal	neg_7068	-	-
+18062	metab_18061	(3S,5R,6R,7E)-3,5,6-Trihydroxy-7-megastigmen-9-one	neg_7083	-	HMDB0038736
+18069	metab_18068	LysoPA(0:0/18:0)	neg_7090	-	HMDB0007850
+18133	metab_18132	5-Carboxy-2'-deoxyuridine	neg_7156	-	-
+18157	metab_18156	Vomifoliol 9-[glucosyl-(1->4)-xylosyl-(1->6)-glucoside]	neg_7181	-	HMDB0038449
+18158	metab_18157	Eriodictyol	neg_7182	C05631	LMPK12140002;HMDB0005810
+18228	metab_18227	[3-(4-methoxyphenyl)propoxy]sulfonic acid	neg_7253	-	-
+18269	metab_18268	20-Hydroxyeicosatetraenoic acid	neg_7295	C14748	HMDB0005998;79551-86-3
+18288	metab_18287	(2E)-1-(4-methoxyphenyl)-3-phenylprop-2-en-1-ol	neg_7314	-	-
+18299	metab_18298	6'-Hydroxyenterolactone	neg_7327	-	-
+18306	metab_18305	Monic acid	neg_7335	-	HMDB0061154
+18311	metab_18310	5,7-Megastigmadien-9-ol glucoside	neg_7340	-	HMDB0041044
+18321	metab_18320	6-{[(1R,16S)-5,7-dihydroxy-8,8,10,12,16-pentamethyl-3-[1-(2-methyl-1,3-thiazol-4-yl)prop-1-en-2-yl]-9-oxo-17-oxa-4-azabicyclo[14.1.0]heptadec-4-en-11-yl]oxy}-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_7350	-	-
+18323	metab_18322	3-(3,4-dimethoxyphenyl)-N-[2-(3,4-dimethoxyphenyl)ethyl]-3-hydroxypropanimidic acid	neg_7353	-	-
+18375	metab_18374	2,4,6-trihydroxy-2-[(4-hydroxyphenyl)methyl]-2,3-dihydro-1-benzofuran-3-one	neg_7407	-	-
+18384	metab_18383	3a,16b-Dihydroxyandrostenone	neg_7416	-	LMST02020091;HMDB0000309
+18391	metab_18390	Toxin T2 tetrol	neg_7423	-	HMDB0036159
+18441	metab_18440	Hordatine A	neg_7474	C08307	HMDB0030461
+18446	metab_18445	Capsoside A	neg_7479	-	HMDB0037613
+18459	metab_18458	(S)-Pinocembrin	neg_7495	C09827	HMDB0030808
+18475	metab_18474	(4S,8R)-8,9-Dihydroxy-p-menth-1(6)-en-2-one	neg_7511	-	HMDB0039052
+18489	metab_18488	6-{[(1S,16R)-5,11-dihydroxy-8,8,10,12,16-pentamethyl-3-[1-(2-methyl-1,3-thiazol-4-yl)prop-1-en-2-yl]-9-oxo-17-oxa-4-azabicyclo[14.1.0]heptadec-4-en-7-yl]oxy}-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_7526	-	-
+18538	metab_18537	Dicrocin	neg_7575	-	HMDB0002353
+18556	metab_18555	AFN911	neg_7594	-	HMDB0013863
+18561	metab_18560	Goshonoside F6	neg_7599	-	HMDB0038542
+18566	metab_18565	Indolelactic acid	neg_7604	C02043	HMDB0000671
+18598	metab_18597	(+/-)-Taxifolin	neg_7637	-	HMDB0040894
+18615	metab_18614	[6]-Gingerdiol 3,5-diacetate	neg_7655	-	HMDB0040568
+18624	metab_18623	(+/-)-Furilazole	neg_7664	-	-
+18662	metab_18661	5-hydroxy-3-(4-hydroxy-3-methoxyphenyl)-7-methoxy-8-methyl-3,4-dihydro-2H-1-benzopyran-4-one	neg_7702	-	-
+18666	metab_18665	4-Hydroxy-4-(3-pyridyl)-butanoic acid	neg_7706	C19579	HMDB0001119
+18705	metab_18704	DIPROTIN A	neg_7749	-	HMDB0251473
+18717	metab_18716	2-Ethyl-2-Hydroxybutyric acid	neg_7761	-	HMDB0001975
+18729	metab_18728	Corchorosol A	neg_7774	-	HMDB0041137
+18734	metab_18733	P-Cresol glucuronide	neg_7780	-	HMDB0011686
+18735	metab_18734	LysoPE(0:0/20:1(11Z))	neg_7781	-	HMDB0011482
+18754	metab_18753	Gibberellin A74	neg_7803	-	HMDB0038746
+18803	metab_18802	Phenylbutyrylglutamine	neg_7856	-	HMDB0011687
+18805	metab_18804	Neurotensin 11-13	neg_7858	-	HMDB0013024
+18806	metab_18805	Seryltryptophan	neg_7859	-	HMDB0029050
+18810	metab_18809	P-Tolyl Sulfate	neg_7863	-	-
+18817	metab_18816	Hydroxyprolyl-Valine	neg_7870	-	HMDB0028876
+18825	metab_18824	(3S,5R,6S,7E,9x)-7-Megastigmene-3,6,9-triol 9-glucoside	neg_7878	-	HMDB0041176;LMFA13010057
+18839	metab_18838	Beta-D-Fructose 6-phosphate	neg_7892	C05345	HMDB0003971
+18843	metab_18842	Methyl dihydrophaseate	neg_7897	-	HMDB0039376
+18858	metab_18857	Butyl (S)-3-hydroxybutyrate glucoside	neg_7912	-	HMDB0031694
+18865	metab_18864	{[1-(2-hydroxyphenyl)-3-oxopropan-2-yl]oxy}sulfonic acid	neg_7920	-	-
+18897	metab_18896	Saponin H	neg_7955	-	HMDB0035607
+18898	metab_18897	Coriandrone D	neg_7956	-	HMDB0029972
+18975	metab_18974	LysoPA(P-16:0e/0:0)	neg_8040	-	-
+18987	metab_18986	Mauritine A	neg_8053	-	HMDB0029338
+18988	metab_18987	Orotidine	neg_8054	C01103	HMDB0000788
+18993	metab_18992	Ala Gly Leu Val Ser	neg_8060	-	-
+19019	metab_19018	Small bacteriocin	neg_8088	-	HMDB0033503
+19040	metab_19039	1-Octen-3-yl primeveroside	neg_8109	-	HMDB0032960;LMFA13010064
+19044	metab_19043	Val Leu Ser Pro Ala	neg_8113	-	-
+19055	metab_19054	6-beta-hydroxymedroxyprogesterone	neg_8124	-	HMDB0061063
+19056	metab_19055	Urothion	neg_8125	-	HMDB0002377
+19116	metab_19115	Leukotriene C4	neg_8188	C02166	HMDB0005095;HMDB0001198;72025-60-6;LMFA03020003
+19124	metab_19123	7,8-Dihydro-3b,6a-dihydroxy-alpha-ionol 9-glucoside	neg_8196	-	HMDB0041578
+19143	metab_19142	1,2-Anhydridoniveusin	neg_8218	-	HMDB0032105
+19156	metab_19155	Glycyl-Gamma-glutamate	neg_8233	-	HMDB0028855
+19160	metab_19159	LysoPE(0:0/22:2(13Z,16Z))	neg_8237	-	HMDB0011492
+19190	metab_19189	6-{[5,7-dihydroxy-2-(3-hydroxy-2,2-dimethyl-3,4-dihydro-2H-1-benzopyran-6-yl)-4-oxo-4H-chromen-3-yl]oxy}-3,4,5-trihydroxyoxane-2-carboxylic acid	neg_8268	-	-
+19201	metab_19200	Postin	neg_8280	-	HMDB0005772
+19214	metab_19213	2-amino-4-({1-[(carboxymethyl)-C-hydroxycarbonimidoyl]-2-{[1-(6,7-dimethoxy-2H-1,3-benzodioxol-5-yl)-1,3-dihydroxypropan-2-yl]sulfanyl}ethyl}-C-hydroxycarbonimidoyl)butanoic acid	neg_8293	-	-
+19220	metab_19219	Aminomalonic acid	neg_8299	C00872	HMDB0001147
+19224	metab_19223	D-Mannose 1-phosphate	neg_8303	C00636	HMDB0006330;27251-84-9
+19233	metab_19232	3-Hydroxy-beta-ionol 3-[glucosyl-(1->6)-glucoside]	neg_8312	-	HMDB0037527
+19268	metab_19267	1-Oleoylglycerophosphoserine	neg_8347	-	HMDB0061694
+19282	metab_19281	PA(8:0/8:0)	neg_8361	C00416	HMDB0114771;LMGP10010021
+19287	metab_19286	7C-aglycone	neg_8367	-	HMDB0004808
+19303	metab_19302	N-Acetyl-DL-methionine	neg_8383	-	-
+19316	metab_19315	Asp-Phe	neg_8397	-	HMDB0000706
+19331	metab_19330	Endomorphin-2	neg_8412	C15891	HMDB0005774
+19336	metab_19335	Olitorin	neg_8417	-	HMDB0034361
+19358	metab_19357	Indole-3-carboxilic acid-O-sulphate	neg_8440	-	HMDB0060002
+19362	metab_19361	Metabolite M6	neg_8444	-	HMDB0061034
+19380	metab_19379	Eriojaposide B	neg_8462	C17889	HMDB0038029
+19385	metab_19384	Adipic acid	neg_8467	C06104	LMFA01170048;HMDB0000448
+19386	metab_19385	Lys Glu Thr Glu	neg_8468	-	-
+19387	metab_19386	Blumenol C O-[rhamnosyl-(1->6)-glucoside]	neg_8469	-	HMDB0031935
+19407	metab_19406	Tryptophyl-Glutamine	neg_8489	-	HMDB0029081
+19455	metab_19454	Dynorphin B (6-9)	neg_8538	-	HMDB0012937
+19463	metab_19462	Ile Ser Thr Glu	neg_8546	-	-
+19494	metab_19493	Asp Leu Ser Glu	neg_8578	-	-
+19507	metab_19506	Thr Leu Asp Glu	neg_8591	-	-
+19544	metab_19543	(3-Methoxy-4-hydroxyphenyl)ethylene glycol sulfate	neg_8629	-	HMDB0000559
+19547	metab_19546	Aspartyl-Valine	neg_8632	-	HMDB0028766
+19554	metab_19553	Simmondsin	neg_8639	-	HMDB0030394
+19591	metab_19590	Histidinyl-Arginine	neg_8676	-	HMDB0028879
+19623	metab_19622	Secoeremopetasitolide A	neg_8708	-	HMDB0041364
+19625	metab_19624	2-Methylguanosine	neg_8710	-	HMDB0001107;HMDB0005862
+19649	metab_19648	Xanthosine	neg_8734	C01762	HMDB0000299;146-80-5
+19710	metab_19709	3'-Hydroxy-HT2 toxin	neg_8795	-	-
+19750	metab_19749	L-2-Amino-4-methylenepentanedioic acid	neg_8836	C00651	HMDB0029433
+19756	metab_19755	Inosine	neg_8843	C00294	HMDB0247301;HMDB0000195;58-63-9
+19765	metab_19764	2-Hydroxyadenine	neg_8852	-	HMDB0000403
+19803	metab_19802	Thromboxane B2	neg_8891	C05963	HMDB0003252;54397-85-2;LMFA03030002
+19841	metab_19840	Asn Ser Leu Arg	neg_8930	-	-
+19844	metab_19843	N-Acetyl-7-O-acetylneuraminic acid	neg_8934	C04016	HMDB0000785
+19845	metab_19844	4-Hydroxyretinoic acid glucuronide	neg_8935	-	HMDB0061688
+19848	metab_19847	2-O-(4-O-Methyl-a-D-glucopyranuronosyl)-D-xylose	neg_8938	-	HMDB0029917
+19862	metab_19861	CAMP	neg_8954	C00575	60-92-4;HMDB0000058
+20002	metab_20001	3'-Ketolactose	neg_9098	-	-
+20073	metab_20072	Ophthalmic acid	neg_9175	-	HMDB0005765
+20086	metab_20085	1-(1,2,3,4,5-Pentahydroxypent-1-yl)-1,2,3,4-tetrahydro-beta-carboline-3-carboxylate	neg_9189	-	HMDB0012492
+20091	metab_20090	Asparaginyl-Hydroxyproline	neg_9194	-	HMDB0028732
+20115	metab_20114	Lacto-N-biose I	neg_9223	C06372	HMDB0252594;HMDB0006575
+20191	metab_20190	D-Maltose	neg_9306	C00208	69-79-4;HMDB0000163
+20192	metab_20191	Prolyl-Asparagine	neg_9307	-	HMDB0029012
+20233	metab_20232	6-(alpha-D-Glucosaminyl)-1D-myo-inositol	neg_9351	C15658	HMDB0011668
+20311	metab_20310	2-Methylerythritol	neg_9433	-	HMDB0011659;HMDB0245046
+20345	metab_20344	Nivalenol	neg_9469	C06080	HMDB0004304
+20568	metab_20567	5-L-Glutamyl-L-alanine	neg_9708	C03740	HMDB0006248
+20576	metab_20575	Nepsilon-Acetyl-L-lysine	neg_9716	C02727	HMDB0000206
+20611	metab_20610	P-Hydroxyphenobarbital	neg_9753	-	HMDB0060537
+20670	metab_20669	L-glycyl-L-hydroxyproline	neg_9815	-	-
+20723	metab_20722	7-Methylguanosine	neg_9872	-	HMDB0001107;HMDB0005862
+20728	metab_20727	5-L-Glutamyl-taurine	neg_9877	C05844	56488-60-9;HMDB0004195
+20760	metab_20759	Citrulline	neg_9910	C00327	HMDB0000904;372-75-8
+20823	metab_20822	3,4,5-trihydroxy-6-[(2E)-3-hydroxy-2-(phenylmethylidene)propoxy]oxane-2-carboxylic acid	neg_9977	-	-
+21270	metab_21269	Brassinolide	neg_6516	C08814	LMST01140001;HMDB0041130;HMDB0034081
+21271	metab_21270	Cynaropicrin	neg_3570	C09385	HMDB0036423
+21272	metab_21271	D-Tartaric acid	neg_9824	C00898	HMDB0000956;HMDB0029878
+21273	metab_21272	Hexadecanedioic acid	neg_4276	C19615	HMDB0000712;HMDB0304377;LMFA01170022;HMDB0000672
+21274	metab_21273	L-Ascorbic acid	neg_9717	C01041	HMDB0000044
+21275	metab_21274	L-Glutamate	neg_403	C00025	HMDB0060475;HMDB0003339;HMDB0000148
+21276	metab_21275	Sulfolithocholylglycine	neg_980	C11301	HMDB0062801;HMDB0002639;HMDB0000698
