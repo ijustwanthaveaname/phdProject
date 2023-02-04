@@ -2,3 +2,4 @@ go/
 *.gz
 GAT-GCN/
 ASCVD
+.vscode/

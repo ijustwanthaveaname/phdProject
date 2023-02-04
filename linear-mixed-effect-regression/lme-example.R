@@ -24,7 +24,7 @@ dt <- read.table("http://bayes.acs.unt.edu:8083/BayesContent/class/Jon/R_SC/Modu
     header = TRUE, sep = ",", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 xtabs(~ school + class, dt)
-# nested model
+# nested model,1 | school / class equal to 1|school + 1|school:class
 m0 <- lmer(extro ~ open + agree + social + (1 | school / class), data = dt)
 summary(m0)
 # cross model

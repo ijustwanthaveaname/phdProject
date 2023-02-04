@@ -2,16 +2,27 @@ setwd("~/Project/survival-analysis")
 library(survival)
 library(survminer)
 library(eha)
-# run PH model using eha package
+library(coxme) 
+### run PH model using eha package
 head(oldmort)
 # enter: start time, exit: end time, event: true means death, false means others
 fit.g <- phreg(Surv(enter - 60, exit - 60, event) ~ sex + civ + region, 
              dist = "gompertz", data = oldmort)
 summary(fit.g)
-# run cox model using eha package
+### run cox model using eha package
 fit.c <- coxreg(Surv(enter - 60, exit - 60, event) ~ sex + civ + region, data = oldmort)
 summary(fit.c)
-# fit the km model for the data
+### Fit a mixed effects Cox model
+# A non-significant institution effect
+fit1 <- coxph(Surv(time, status) ~ ph.ecog + age, data=lung,
+              subset=(!is.na(inst)))
+fit2 <- coxme(Surv(time, status) ~ ph.ecog + age + (1|inst), lung)
+anova(fit1, fit2)
+# Shrinkage effects (equivalent to ridge regression)
+temp <- with(lung, scale(cbind(age, wt.loss, meal.cal)))
+rfit <- coxme(Surv(time, status) ~ ph.ecog + (temp | 1), data=lung)
+
+### fit the km model for the data
 # set ~1 because no x variables
 # default type is km
 head(lung)
@@ -42,7 +53,7 @@ legend(
     800, 0.8, legen = c("Male","Female"), lty = 1, lwd = 2, 
     col = c("red", "blue", bty = "", cex = 0.6))
 dev.off()
-# log rank test which used for testing if two survival curve are significantly different
+### log rank test which used for testing if two survival curve are significantly different
 # other methods: Cochran–Mantel–Haenszel, wilcoxon test
 survdiff(Surv(time, status) ~ sex, data = lung)
 # other ways to plot
