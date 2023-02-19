@@ -1,5 +1,5 @@
 rm(list = ls())
-setwd("~/phdProject/Omics_learning")
+setwd("~/phdProject/Omics")
 library("SIAMCAT")
 
 data("feat_crc_zeller")
