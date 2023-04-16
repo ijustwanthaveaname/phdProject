@@ -1,13 +1,12 @@
-library(TwoSampleMR)
-library(ieugwasr)
-library(tidyverse)
-library(LDlinkR)
-library(MRPRESSO)
+#!/usr/bin/env Rscript
+#######################################################################################
+############ This sciprt is a easy pipeline
+############ To perform two sample mendelian randomization using TwoSampleMR R package 
+############ Make sure all required R packages are downloaded.
+#######################################################################################
+
+###### Get arguments from command line #############
 library(argparser)
-library(glue)
-
-
-###### get arguments from command line #############
 p <- arg_parser("Perform mendelian randomization analysis using TwoSampleMR")
 p <- add_argument(p, "--exp", help = "exposure gwas summary")
 p <- add_argument(p, "--otc", help = "outcome gwas summary")
@@ -20,27 +19,57 @@ p <- add_argument(p, "--proxy", help = "use proxy snps", flag = TRUE)
 p <- add_argument(p, "--online", help = "search proxy online", flag =TRUE)
 p <- add_argument(p, "--pop", help = "specify LD population <default = EUR>", default = "EUR")
 p <- add_argument(p, "--rsq", help = "specify LD r-square <default = 0.8>", default = 0.8)
+p <- add_argument(p, "--bidirect", help = "option to perform bidirectional MR", flag = TRUE)
 p <- add_argument(p, "--bfile", help = "plink format file to use LD reference panel", default = "")
 p <- add_argument(p, "--plink", help = "path to plink", default = "")
+p <- add_argument(p, "--piv", help = "pvalue threshold for IV", default = 5e-8)
+p <- add_argument(p, "--rpiv", help = "pvalue threshold for reverse IV", default = 5e-8)
+p <- add_argument(p, "--esnp", help = "column name of rsid in exposure gwas", default = "variant_id")
+p <- add_argument(p, "--osnp", help = "column name of rsid in outcome gwas", default = "variant_id")
+p <- add_argument(p, "--ebeta", help = "column name of beta in exposure gwas", default = "beta")
+p <- add_argument(p, "--obeta", help = "column name of beta in outcome gwas", default = "beta")
+p <- add_argument(p, "--ese", help = "column name of se in exposure gwas", default = "standard_error")
+p <- add_argument(p, "--ose", help = "column name of se in outcome gwas", default = "standard_error")
+p <- add_argument(p, "--echr", help = "column name of chr in exposure gwas", default = "chromosome")
+p <- add_argument(p, "--ochr", help = "column name of chr in outcome gwas", default = "chromosome")
+p <- add_argument(p, "--epos", help = "column name of snp position in exposure gwas", default = "base_pair_location")
+p <- add_argument(p, "--opos", help = "column name of snp position in outcome gwas", default = "base_pair_location")
+p <- add_argument(p, "--eea", help = "column name of effect allele in exposure gwas", default = "effect_allele")
+p <- add_argument(p, "--oea", help = "column name of effect allele in outcome gwas", default = "effect_allele")
+p <- add_argument(p, "--eoa", help = "column name of other allele in exposure gwas", default = "other_allele")
+p <- add_argument(p, "--ooa", help = "column name of other allele in outcome gwas", default = "other_allele")
+p <- add_argument(p, "--eeaf", help ="column name of effect allele frequency in exposure gwas", default = "effect_allele_frequency")
+p <- add_argument(p, "--oeaf", help ="column name of effect allele frequency in outcome gwas", default = "effect_allele_frequency")
+p <- add_argument(p, "--epval", help = "column name of pvalue in exposure gwas", default = "p_value")
+p <- add_argument(p, "--opval", help = "column name of pvalue in outcome gwas", default = "p_value")
 argv <- parse_args(p)
-
+out.tsv.path <- paste(argv$prefix, ".tsv", sep = "")
+out.reverse.tsv.path <- paste(argv$prefix, "_reverse.tsv", sep = "")
+if (!argv$bidirect & file.exists(out.tsv.path)) {
+    cat("File exits! Skip.")
+    q(save = "no")
+} else if (argv$bidirect & file.exists(out.tsv.path) & file.exists(out.reverse.tsv.path)) {
+    cat("File exits! Skip.")
+    q(save = "no")
+}
 ######## function for get proxy #########
 get_proxy <- function(exp_dat, otc_dat, r2 = 0.8, pop = "EUR", online = TRUE, bin_plink, ref_panel, outfile = "proxy") {
-    exp.snp = exp_dat$SNP
-    otc.snp = otc_dat$SNP
-    otc_dat = otc_dat %>% mutate(
-        target_snp.outcome = NA,
-        proxy_snp.outcome = NA,
-        target_a1.outcome = NA,
-        target_a2.outcome = NA,
-        proxy_a1.outcome = NA,
-        proxy_a2.outcome = NA,
-        proxy.outcome = NA
-        )
+            exp.snp = exp_dat$SNP
+            otc.snp = otc_dat$SNP
+            otc_dat = otc_dat %>% mutate(
+                target_snp.outcome = NA,
+                proxy_snp.outcome = NA,
+                target_a1.outcome = NA,
+                target_a2.outcome = NA,
+                proxy_a1.outcome = NA,
+                proxy_a2.outcome = NA,
+                proxy.outcome = NA
+                )
     miss.expsnps = setdiff(exp.snp, intersect(exp.snp, otc.snp))
     remain.otcsnps = setdiff(otc.snp, intersect(exp.snp, otc.snp))
     for (miss.snp in miss.expsnps) {
         if (online) {
+            library(LDlinkR)
             proxies.df = LDproxy(snp = miss.snp, pop = pop, token = "6fb632e022ef")
             top_proxies.df = proxies.df %>% filter(R2 >= r2, Distance > 0, RS_Number %in% remain.otcsnps) %>% arrange(-R2) %>% head(1)  
         } else {
@@ -83,125 +112,208 @@ get_proxy <- function(exp_dat, otc_dat, r2 = 0.8, pop = "EUR", online = TRUE, bi
     return(otc_dat %>% filter(SNP %in% exp.snp))
 }
 ########## perform MR #####################
-exp_gwas <- read_tsv(argv$exp)
-exp_dat <- format_data(exp_gwas %>% filter(p_value <= 5e-8) %>% mutate(phenotype = argv$expname, id = argv$expname),
-    snp_col = "variant_id",
-    beta_col = "beta",
-    se_col = "standard_error",
-    chr_col = "chromosome",
-    pos_col = "base_pair_location",
-    effect_allele_col = "effect_allele",
-    other_allele_col = "other_allele",
-    eaf_col = "effect_allele_frequency",
-    pval_col = "p_value",
-    phenotype_col = "phenotype",
-    id_col = "id",
-    type = "exposure")
 
-# exp_dat <- clump_data(exp_dat)
+
+performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname = "outcome", piv = 5e-8) {
+    if (argv$proxy) {
+        cat("Searching proxy snps...\n")
+        otc_dat <- get_proxy(
+            exp_dat, 
+            otc_dat, 
+            r2 = as.numeric(argv$rsq), 
+            online = argv$online, 
+            pop = argv$pop, 
+            bin_plink = argv$plink,
+            ref_panel = argv$bfile,
+            outfile = outprefix
+            )
+    }
+    otc_dat <- otc_dat %>% mutate(outcome = argv$otcname, id.outcome = argv$otcname, originalname.outcome = argv$otcname)
+    cat("Harmonising data......\n")
+    exp_otc_dat <- harmonise_data(exp_dat, otc_dat)
+    if (nrow(exp_otc_dat) >=1) {
+        exp_otc_dat <- exp_otc_dat %>% mutate(samplesize.exposure = as.numeric(argv$nexp), samplesize.outcome = as.numeric(argv$notc))
+        cat("Performing MR...\n")
+        exp_otc_res <- mr(exp_otc_dat, method_list = c("mr_wald_ratio", "mr_ivw", "mr_egger_regression", "mr_weighted_median"))
+        exp_otc_res <- generate_odds_ratios(exp_otc_res)
+        exp_otc_res <- exp_otc_res %>% mutate(beta_95_CI = paste(round(b, 3), " [", round(lo_ci, 3), "-", round(up_ci, 3), "]", sep = ""), 
+                                            OR_95_CI = paste(round(or, 3), " [", round(or_lci95, 3), "-", round(or_uci95, 3), "]", sep = ""))
+        out.df <- data.frame(
+            exposure = expname,
+            outcome = otcname,
+            ivw_or_wald.b = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$b, 
+            nsnp = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$nsnp, 
+            ivw_or_wald.se = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$se,
+            ivw_or_wald.b.95ci = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$beta_95_CI,
+            ivw_or_wald.or.95ci = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$OR_95_CI,
+            ivw_or_wald.pval = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$pval)
+        cat("Finished MR\n")
+        ####### sensitive test ##############
+        cat("Performing sensitive MR...\n")
+        # 0. Same direction for all method 
+        same_direction <- all(exp_otc_res$b > 0) | all(exp_otc_res$b < 0)
+        out.df$same_direction <- same_direction
+        # 1. Heterogeneity test
+        if (nrow(exp_otc_dat) >= 2) {
+            exp_otc_mrHet <- mr_heterogeneity(exp_otc_dat, method_list = "mr_ivw")
+            q.het <- exp_otc_mrHet$Q_pval
+            out.df$q.het <- q.het
+        } else {
+            out.df$q.het <- NA
+        }
+        # 2. Horizontal pleiotropy test
+        if (nrow(exp_otc_dat) >= 3) {
+            out.df$eggReg.b <- (exp_otc_res %>% filter(method == "MR Egger"))$b
+            out.df$eggReg.se <- (exp_otc_res %>% filter(method == "MR Egger"))$se
+            out.df$eggReg.b.95ci <- (exp_otc_res %>% filter(method == "MR Egger"))$beta_95_CI
+            out.df$eggReg.or.95ci <- (exp_otc_res %>% filter(method == "MR Egger"))$OR_95_CI
+            out.df$eggReg.pval <- (exp_otc_res %>% filter(method == "MR Egger"))$pval
+            out.df$weightMed.b <- (exp_otc_res %>% filter(method == "Weighted median"))$b
+            out.df$weightMed.se <- (exp_otc_res %>% filter(method == "Weighted median"))$se
+            out.df$weightMed.b.95ci <- (exp_otc_res %>% filter(method == "Weighted median"))$beta_95_CI
+            out.df$weightMed.or.95ci <- (exp_otc_res %>% filter(method == "Weighted median"))$OR_95_CI
+            out.df$weightMed.pval <- (exp_otc_res %>% filter(method == "Weighted median"))$pval
+            exp_otc_mrEggerIntercept <- mr_pleiotropy_test(exp_otc_dat)
+            out.df$p.eggerIntercept <- exp_otc_mrEggerIntercept$pval
+        } else {
+            out.df$p.eggerIntercept <- NA
+            out.df$eggReg.b <- NA
+            out.df$eggReg.se <- NA
+            out.df$eggReg.b.95ci <- NA
+            out.df$eggReg.or.95ci <- NA
+            out.df$eggReg.pval <- NA 
+            out.df$weightMed.b <- NA 
+            out.df$weightMed.se <- NA
+            out.df$weightMed.b.95ci <- NA
+            out.df$weightMed.or.95ci <- NA
+            out.df$weightMed.pval <- NA
+        }
+        # 3. global pleiotropy test
+        if (nrow(exp_otc_dat) >= 4) {
+            exp_otc_mrPresso <- mr_presso(BetaOutcome ="beta.outcome", BetaExposure = "beta.exposure", SdOutcome ="se.outcome", SdExposure = "se.exposure", 
+                                            OUTLIERtest = FALSE, DISTORTIONtest = FALSE, data = exp_otc_dat, SignifThreshold = 0.05)
+            out.df$p.globalPleiotropy <- exp_otc_mrPresso$`MR-PRESSO results`$`Global Test`$Pvalue
+        } else {
+            out.df$p.globalPleiotropy <- NA
+        }
+        # 4. Reverse causation test
+        exp_otc_Steiger <- directionality_test(exp_otc_dat)
+        (exp_otc_Steiger$snp_r2.exposure < exp_otc_Steiger$snp_r2.outcome) & exp_otc_Steiger$steiger_pval < 0.05
+        out.df$snp_r2.exposure <- exp_otc_Steiger$snp_r2.exposure
+        out.df$snp_r2.outcome <- exp_otc_Steiger$snp_r2.outcome
+        out.df$steiger_pval <- exp_otc_Steiger$steiger_pval
+        out.df$reverse_caution <- (exp_otc_Steiger$snp_r2.exposure < exp_otc_Steiger$snp_r2.outcome) & exp_otc_Steiger$steiger_pval < 0.05
+        cat("Finished sensitive test\n")
+        if (out.df$nsnp == 1) {
+            out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (!out.df$reverse_caution), TRUE, FALSE)
+        } else if (out.df$nsnp == 2) {
+            out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (!out.df$reverse_caution), TRUE, FALSE)
+        } else if (out.df$nsnp == 3) {
+            out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (out.df$p.eggerIntercept > 0.05) &(out.df$same_direction) & (!out.df$reverse_caution), TRUE, FALSE)
+        } else {
+            out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (out.df$p.eggerIntercept > 0.05) &(out.df$same_direction) & (!out.df$reverse_caution) & (out.df$p.globalPleiotropy > 0.05), TRUE, FALSE)
+        }
+
+        
+        # write_tsv(out.df, out.tsv.path)
+        return(out.df)
+        # cat("Successfully write results to ", out.tsv.path, "\n", sep = "")
+    } else {
+        cat("Not found IVs, can't perform MR analysis.\n")
+    }
+   
+}
+
+
+########## Main ###################
+library(TwoSampleMR)
+library(ieugwasr)
+library(tidyverse)
+library(MRPRESSO)
+library(data.table)
+library(glue)
+# read data
+exp_gwas <- fread(argv$exp)
+otc_gwas <- fread(argv$otc)
+# format data
+exp_dat <- format_data(
+    exp_gwas %>% filter(get(argv$epval) < argv$piv),
+    snp_col = argv$esnp,
+    beta_col = argv$ebeta,
+    se_col = argv$ese,
+    chr_col = argv$echr,
+    pos_col = argv$epos,
+    effect_allele_col = argv$eea,
+    other_allele_col = argv$eoa,
+    eaf_col = argv$eeaf,
+    pval_col = argv$epval,
+    type = "exposure")
+otc_dat <- format_data(
+    otc_gwas,
+    snp_col = argv$osnp,
+    beta_col = argv$obeta,
+    se_col = argv$ose,
+    chr_col = argv$ochr,
+    pos_col = argv$opos,
+    effect_allele_col = argv$oea,
+    other_allele_col = argv$ooa,
+    eaf_col = argv$oeaf,
+    pval_col = argv$opval,
+    type = "outcome"
+)
+exp_dat <- exp_dat %>% filter(pval.exposure < argv$piv)
 rsid_pval_exp <- exp_dat %>% select(SNP, pval.exposure) %>% rename(rsid = SNP, pval = pval.exposure)
+cat("Clumping...\n")
 rsid_pval_exp.clump <- ld_clump_local(rsid_pval_exp , clump_kb = 10000, clump_r2 = 0.001, clump_p = 1, plink_bin = argv$plink, bfile = argv$bfile)
 exp_dat <- exp_dat %>% filter(SNP %in% rsid_pval_exp.clump$rsid)
 cat("Finished clump\n")
-otc_dat <- read_outcome_data(
-    argv$otc,
-    sep = "\t", 
-    snp_col = "variant_id",
-    beta_col = "beta",
-    se_col = "standard_error",
-    chr_col = "chromosome",
-    pos_col = "base_pair_location",
-    effect_allele_col = "effect_allele",
-    other_allele_col = "other_allele",
-    eaf_col = "effect_allele_frequency",
-    pval_col = "p_value"
+# perform MR
+out.df <- performMR(exp_dat, otc_dat, argv$prefix, expname = argv$expname, otcname = argv$otcname, piv = as.numeric(argv$piv))
+# reverse MR
+out.df$reverse_MR_sig <- NA
+out.df$reverse_MR_allpass <- NA
+if (argv$bidirect) {
+    exp_rev_dat <- format_data(
+        otc_gwas %>% filter(get(argv$opval) < argv$rpiv),
+        snp_col = argv$osnp,
+        beta_col = argv$obeta,
+        se_col = argv$ose,
+        chr_col = argv$ochr,
+        pos_col = argv$opos,
+        effect_allele_col = argv$oea,
+        other_allele_col = argv$ooa,
+        eaf_col = argv$oeaf,
+        pval_col = argv$opval,
+        type = "exposure"
     )
-if (argv$proxy) {
-    cat("Searching proxy snps...\n")
-    otc_dat <- get_proxy(
-        exp_dat, 
-        otc_dat, 
-        r2 = as.numeric(argv$rsq), 
-        online = argv$online, 
-        pop = argv$pop, 
-        bin_plink = argv$plink,
-        ref_panel = argv$bfile,
-        outfile = argv$prefix
-        )
+    otc_rev_dat <- format_data(
+        exp_gwas,
+        snp_col = argv$esnp,
+        beta_col = argv$ebeta,
+        se_col = argv$ese,
+        chr_col = argv$echr,
+        pos_col = argv$epos,
+        effect_allele_col = argv$eea,
+        other_allele_col = argv$eoa,
+        eaf_col = argv$eeaf,
+        pval_col = argv$epval,
+        type = "outcome")
+    exp_rev_dat <- exp_rev_dat %>% filter(pval.exposure < argv$rpiv)
+    rev_rsid_pval_exp <- exp_rev_dat %>% select(SNP, pval.exposure) %>% rename(rsid = SNP, pval = pval.exposure)
+    cat("Clumping...\n")
+    rev_rsid_pval_exp.clump <- ld_clump_local(rev_rsid_pval_exp , clump_kb = 10000, clump_r2 = 0.001, clump_p = 1, plink_bin = argv$plink, bfile = argv$bfile)
+    exp_rev_dat <- exp_rev_dat %>% filter(SNP %in% rev_rsid_pval_exp.clump$rsid)
+    cat("Finished clump\n")
+    cat("Perform reverse MR...\n")
+    out.reverse.df <- performMR(exp_rev_dat, otc_rev_dat, paste(argv$prefix, "_reverse", sep = ""), expname = argv$otcname, otcname = argv$expname, piv = as.numeric(argv$rpiv))
+    out.reverse.df$reverse_MR_sig <- ifelse(out.df$ivw_or_wald.pval < 0.05, TRUE, FALSE)
+    out.reverse.df$reverse_MR_allpass <- ifelse(out.df$pass_alltests, TRUE, FALSE)
+    write_tsv(out.reverse.df, out.reverse.tsv.path)
+    cat("Successfully write reverse results to ", out.reverse.tsv.path, "\n", sep = "")
+    out.df$reverse_MR_sig <- ifelse(out.reverse.df$ivw_or_wald.pval < 0.05, TRUE, FALSE)
+    out.df$reverse_MR_allpass <- ifelse(out.reverse.df$pass_alltests, TRUE, FALSE)
 }
-otc_dat <- otc_dat %>% mutate(outcome = argv$otcname, id.outcome = argv$otcname, originalname.outcome = argv$otcname)
-cat("Harmonising data......\n")
-exp_otc_dat <- harmonise_data(exp_dat, otc_dat)
-exp_otc_dat <- exp_otc_dat %>% mutate(samplesize.exposure = as.numeric(argv$nexp), samplesize.outcome = as.numeric(argv$notc))
-cat("Performing MR...\n")
-exp_otc_res <- mr(exp_otc_dat, method_list = c("mr_wald_ratio", "mr_ivw", "mr_egger_regression", "mr_weighted_median"))
-out.df <- data.frame(
-    ivw_or_wald.b = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$b, 
-    nsnp = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$nsnp, 
-    ivw_or_wald.se = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$se, 
-    ivw_or_wald.pval = (exp_otc_res %>% filter(method %in% c("Wald ratio", "Inverse variance weighted")))$pval)
-cat("Finished MR\n")
-####### sensitive test ##############
-cat("Performing sensitive MR...\n")
-# 0. Same direction for all method 
-same_direction <- all(exp_otc_res$b > 0) | all(exp_otc_res$b < 0)
-out.df$same_direction <- same_direction
-# 1. Heterogeneity test
-if (nrow(exp_otc_dat) >= 2) {
-    exp_otc_mrHet <- mr_heterogeneity(exp_otc_dat, method_list = "mr_ivw")
-    q.het <- exp_otc_mrHet$Q_pval
-    out.df$q.het <- q.het
-} else {
-    out.df$q.het <- NA
-}
-# 2. Horizontal pleiotropy test
-if (nrow(exp_otc_dat) >= 3) {
-    out.df$eggReg.b <- (exp_otc_res %>% filter(method == "MR Egger"))$b
-    out.df$eggReg.se <- (exp_otc_res %>% filter(method == "MR Egger"))$se
-    out.df$eggReg.pval <- (exp_otc_res %>% filter(method == "MR Egger"))$pval
-    out.df$weightMed.b <- (exp_otc_res %>% filter(method == "MR Egger"))$b
-    out.df$weightMed.se <- (exp_otc_res %>% filter(method == "MR Egger"))$se
-    out.df$weightMed.pval <- (exp_otc_res %>% filter(method == "MR Egger"))$pval
-    exp_otc_mrEggerIntercept <- mr_pleiotropy_test(exp_otc_dat)
-    out.df$p.eggerIntercept <- exp_otc_mrEggerIntercept$pval
-    
 
-} else {
-    out.df$p.eggerIntercept <- NA
-    out.df$eggReg.b <- NA
-    out.df$eggReg.se <- NA
-    out.df$eggReg.pval <- NA 
-    out.df$weightMed.b <- NA 
-    out.df$weightMed.se <- NA
-    out.df$weightMed.pval <- NA
-}
-# 3. global pleiotropy test
-if (nrow(exp_otc_dat) >= 4) {
-    exp_otc_mrPresso <- mr_presso(BetaOutcome ="beta.outcome", BetaExposure = "beta.exposure", SdOutcome ="se.outcome", SdExposure = "se.exposure", 
-                                    OUTLIERtest = FALSE, DISTORTIONtest = FALSE, data = exp_otc_dat, SignifThreshold = 0.05)
-    out.df$p.globalPleiotropy <- exp_otc_mrPresso$`MR-PRESSO results`$`Global Test`$Pvalue
-} else {
-    out.df$p.globalPleiotropy <- NA
-}
-# 4. Reverse causation test
-exp_otc_Steiger <- directionality_test(exp_otc_dat)
-(exp_otc_Steiger$snp_r2.exposure < exp_otc_Steiger$snp_r2.outcome) & exp_otc_Steiger$steiger_pval < 0.05
-out.df$snp_r2.exposure <- exp_otc_Steiger$snp_r2.exposure
-out.df$snp_r2.outcome <- exp_otc_Steiger$snp_r2.outcome
-out.df$steiger_pval <- exp_otc_Steiger$steiger_pval
-out.df$reverse_caution <- (exp_otc_Steiger$snp_r2.exposure < exp_otc_Steiger$snp_r2.outcome) & exp_otc_Steiger$steiger_pval < 0.05
-cat("Finished sensitive test\n")
-if (out.df$nsnp == 1) {
-    out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (!out.df$reverse_caution), TRUE, FALSE)
-} else if (out.df$nsnp == 2) {
-    out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (!out.df$reverse_caution), TRUE, FALSE)
-} else if (out.df$nsnp == 3) {
-    out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (out.df$p.eggerIntercept > 0.05) &(out.df$same_direction) & (!out.df$reverse_caution), TRUE, FALSE)
-} else {
-    out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (out.df$p.eggerIntercept > 0.05) &(out.df$same_direction) & (!out.df$reverse_caution) & (out.df$p.globalPleiotropy > 0.05), TRUE, FALSE)
-}
 # write to file
-cat("Write to file... \n")
-out.tsv.path <- paste(argv$prefix, ".tsv", sep = "")
 write_tsv(out.df, out.tsv.path)
-cat("Successfully write results to ", out.tsv.path, "\n", sep="")
+cat("Successfully write results to ", out.tsv.path, "\n", sep = "")
