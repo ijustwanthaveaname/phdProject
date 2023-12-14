@@ -73,7 +73,8 @@ get_proxy <- function(exp_dat, otc_dat, r2 = 0.8, pop = "EUR", online = TRUE, bi
             proxies.df = LDproxy(snp = miss.snp, pop = pop, token = "6fb632e022ef")
             top_proxies.df = proxies.df %>% filter(R2 >= r2, Distance > 0, RS_Number %in% remain.otcsnps) %>% arrange(-R2) %>% head(1)  
         } else {
-            system(glue("{bin_plink} -bfile {ref_panel} --r2 --ld-snp {miss.snp} --ld-window 1000000 --ld-window-kb 1000 --ld-window-r2 {r2} --out {outfile}_{miss.snp}_proxy"))
+            outfilepath = shQuote(outfile)
+            system(glue("{bin_plink} -bfile {ref_panel} --r2 --ld-snp {miss.snp} --ld-window 1000000 --ld-window-kb 1000 --ld-window-r2 {r2} --out {outfilepath}_{miss.snp}_proxy"))
             proxies.df = read_table(glue("{outfile}_{miss.snp}_proxy.ld"))
             top_proxies.df = proxies.df %>% filter(SNP_A != SNP_B, SNP_B %in% remain.otcsnps) %>% arrange(-R2) %>% head(1) %>% rename(RS_Number = SNP_B)
         }
@@ -94,16 +95,19 @@ get_proxy <- function(exp_dat, otc_dat, r2 = 0.8, pop = "EUR", online = TRUE, bi
                 proxy.allele1 = allele_info[3]
                 proxy.allele2 = allele_info[4]
             }
-
+            if (!identical(sort(c(target.allele1, target.allele2)), sort(c(effect_allele.exposure, other_allele.exposure)))){
+                cat("Alleles are not consistent for ", miss.snp, "\n", sep = "")
+                next
+            }
             otc_dat[otc_dat$SNP == rsid,]$target_snp.outcome = miss.snp
             otc_dat[otc_dat$SNP == rsid,]$proxy_snp.outcome = rsid
-            otc_dat[otc_dat$SNP == rsid,]$target_a1.outcome = target.allele1
-            otc_dat[otc_dat$SNP == rsid,]$target_a2.outcome = target.allele2
-            otc_dat[otc_dat$SNP == rsid,]$proxy_a1.outcome = proxy.allele1
-            otc_dat[otc_dat$SNP == rsid,]$proxy_a2.outcome = proxy.allele2
+            otc_dat[otc_dat$SNP == rsid,]$target_a1.outcome = ifelse(otc_dat[otc_dat$SNP == rsid,]$effect_allele.outcome == proxy.allele1, target.allele1, target.allele2)
+            otc_dat[otc_dat$SNP == rsid,]$target_a2.outcome = ifelse(otc_dat[otc_dat$SNP == rsid,]$other_allele.outcome == proxy.allele2, target.allele2, target.allele1)
+            otc_dat[otc_dat$SNP == rsid,]$proxy_a1.outcome = ifelse(otc_dat[otc_dat$SNP == rsid,]$effect_allele.outcome == proxy.allele1, proxy.allele1, proxy.allele2)
+            otc_dat[otc_dat$SNP == rsid,]$proxy_a2.outcome = ifelse(otc_dat[otc_dat$SNP == rsid,]$other_allele.outcome == proxy.allele2, proxy.allele2, proxy.allele1)
             otc_dat[otc_dat$SNP == rsid,]$proxy.outcome = TRUE
-            otc_dat[otc_dat$SNP == rsid,]$effect_allele.outcome = effect_allele.exposure
-            otc_dat[otc_dat$SNP == rsid,]$other_allele.outcome = other_allele.exposure
+            otc_dat[otc_dat$SNP == rsid,]$effect_allele.outcome = ifelse(otc_dat[otc_dat$SNP == rsid,]$effect_allele.outcome == proxy.allele1, target.allele1, target.allele2)
+            otc_dat[otc_dat$SNP == rsid,]$other_allele.outcome = ifelse(otc_dat[otc_dat$SNP == rsid,]$other_allele.outcome == proxy.allele2, target.allele2, target.allele1)
             otc_dat[otc_dat$SNP == rsid,]$SNP = miss.snp
         } else {
             cat("Not found proxies of ", miss.snp, "\n", sep = "")
@@ -112,8 +116,6 @@ get_proxy <- function(exp_dat, otc_dat, r2 = 0.8, pop = "EUR", online = TRUE, bi
     return(otc_dat %>% filter(SNP %in% exp.snp))
 }
 ########## perform MR #####################
-
-
 performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname = "outcome", piv = 5e-8) {
     if (argv$proxy) {
         cat("Searching proxy snps...\n")
@@ -131,7 +133,7 @@ performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname
     otc_dat <- otc_dat %>% mutate(outcome = argv$otcname, id.outcome = argv$otcname, originalname.outcome = argv$otcname)
     cat("Harmonising data......\n")
     exp_otc_dat <- harmonise_data(exp_dat, otc_dat)
-    if (nrow(exp_otc_dat) >=1) {
+    if (sum(exp_otc_dat$mr_keep) >=1) {
         exp_otc_dat <- exp_otc_dat %>% mutate(samplesize.exposure = as.numeric(argv$nexp), samplesize.outcome = as.numeric(argv$notc))
         cat("Performing MR...\n")
         exp_otc_res <- mr(exp_otc_dat, method_list = c("mr_wald_ratio", "mr_ivw", "mr_egger_regression", "mr_weighted_median"))
@@ -150,11 +152,8 @@ performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname
         cat("Finished MR\n")
         ####### sensitive test ##############
         cat("Performing sensitive MR...\n")
-        # 0. Same direction for all method 
-        same_direction <- all(exp_otc_res$b > 0) | all(exp_otc_res$b < 0)
-        out.df$same_direction <- same_direction
         # 1. Heterogeneity test
-        if (nrow(exp_otc_dat) >= 2) {
+        if (sum(exp_otc_dat$mr_keep) >= 2) {
             exp_otc_mrHet <- mr_heterogeneity(exp_otc_dat, method_list = "mr_ivw")
             q.het <- exp_otc_mrHet$Q_pval
             out.df$q.het <- q.het
@@ -162,7 +161,7 @@ performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname
             out.df$q.het <- NA
         }
         # 2. Horizontal pleiotropy test
-        if (nrow(exp_otc_dat) >= 3) {
+        if (sum(exp_otc_dat$mr_keep) >= 3) {
             out.df$eggReg.b <- (exp_otc_res %>% filter(method == "MR Egger"))$b
             out.df$eggReg.se <- (exp_otc_res %>% filter(method == "MR Egger"))$se
             out.df$eggReg.b.95ci <- (exp_otc_res %>% filter(method == "MR Egger"))$beta_95_CI
@@ -188,22 +187,44 @@ performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname
             out.df$weightMed.or.95ci <- NA
             out.df$weightMed.pval <- NA
         }
-        # 3. global pleiotropy test
-        if (nrow(exp_otc_dat) >= 4) {
+        # 3. MR-presso, global pleiotropy test and outlier test
+        out.df$presso.b <- NA
+        out.df$presso.se <- NA
+        out.df$presso.b.95ci <- NA
+        out.df$presso.pval <- NA
+        out.df$presso.or <- NA
+        out.df$presso.or.95ci <- NA
+        if (sum(exp_otc_dat$mr_keep) >= 4) {
             exp_otc_mrPresso <- mr_presso(BetaOutcome ="beta.outcome", BetaExposure = "beta.exposure", SdOutcome ="se.outcome", SdExposure = "se.exposure", 
                                             OUTLIERtest = FALSE, DISTORTIONtest = FALSE, data = exp_otc_dat, SignifThreshold = 0.05)
             out.df$p.globalPleiotropy <- exp_otc_mrPresso$`MR-PRESSO results`$`Global Test`$Pvalue
+            index <- ifelse(is.na(exp_otc_mrPresso$`Main MR results`[2, 3]), 1, 2)
+            out.df$presso.b <- exp_otc_mrPresso$`Main MR results`$`Causal Estimate`[index]
+            out.df$presso.se <- exp_otc_mrPresso$`Main MR results`$Sd[index]
+            out.df$presso.pval <- exp_otc_mrPresso$`Main MR results`$`P-value`[index]
+            out.df$presso.or <- exp(exp_otc_mrPresso$`Main MR results`$`Causal Estimate`[index])
+            lci <- exp_otc_mrPresso$`Main MR results`$`Causal Estimate`[index] - 1.96 * exp_otc_mrPresso$`Main MR results`$Sd[index] 
+            uci <- exp_otc_mrPresso$`Main MR results`$`Causal Estimate`[index] + 1.96 * exp_otc_mrPresso$`Main MR results`$Sd[index]
+            out.df$presso.b.95ci <- paste("[", lci, "-", uci, "]", sep = "")
+            or.lci <- exp(lci)
+            or.uci <- exp(uci)
+            out.df$presso.or.95ci <- paste("[", or.lci, "-", or.uci, "]", sep = "")
+            # 4. Same direction for all method 
+            same_direction <- all(c(exp_otc_res$b, out.df$presso.b) > 0) | all(c(exp_otc_res$b, out.df$presso.b) < 0)       
         } else {
             out.df$p.globalPleiotropy <- NA
+            same_direction <- all(exp_otc_res$b > 0) | all(exp_otc_res$b < 0)
         }
-        # 4. Reverse causation test
+        out.df$same_direction <- same_direction
+
+
+        # 5. Reverse causation test
         exp_otc_Steiger <- directionality_test(exp_otc_dat)
         (exp_otc_Steiger$snp_r2.exposure < exp_otc_Steiger$snp_r2.outcome) & exp_otc_Steiger$steiger_pval < 0.05
         out.df$snp_r2.exposure <- exp_otc_Steiger$snp_r2.exposure
         out.df$snp_r2.outcome <- exp_otc_Steiger$snp_r2.outcome
         out.df$steiger_pval <- exp_otc_Steiger$steiger_pval
         out.df$reverse_caution <- (exp_otc_Steiger$snp_r2.exposure < exp_otc_Steiger$snp_r2.outcome) & exp_otc_Steiger$steiger_pval < 0.05
-        cat("Finished sensitive test\n")
         if (out.df$nsnp == 1) {
             out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (!out.df$reverse_caution), TRUE, FALSE)
         } else if (out.df$nsnp == 2) {
@@ -213,7 +234,7 @@ performMR <- function(exp_dat, otc_dat, outprefix, expname = "exposure", otcname
         } else {
             out.df$pass_alltests <- ifelse((out.df$ivw_or_wald.pval < 0.05) & (out.df$q.het > 0.05) & (out.df$p.eggerIntercept > 0.05) &(out.df$same_direction) & (!out.df$reverse_caution) & (out.df$p.globalPleiotropy > 0.05), TRUE, FALSE)
         }
-
+        cat("Finished sensitive test\n")
         
         # write_tsv(out.df, out.tsv.path)
         return(out.df)
